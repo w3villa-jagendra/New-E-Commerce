@@ -252,11 +252,11 @@ why buy
     margin-top: 80px;
     padding-left: 20px;
 } */
-.comm-card .card button{
+.why-buy-cards .comm-card .card button{
    position: absolute;
    width: 150px;
    bottom: 50px;
-   left: 68px;
+   left: 50px;
 }
 .comm-card img{
   height: 300px;
