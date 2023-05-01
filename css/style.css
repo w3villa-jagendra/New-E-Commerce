@@ -1,0 +1,527 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.container{
+
+/* 
+width: ;
+background-color: aliceblue;
+margin-left: 20rem !important; */
+}
+
+/* main-bar */
+
+.top-bar_main {
+    background-color: #fffefe;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-bar a {
+    color: rgb(111, 111, 111);
+    padding: 5px;
+    text-decoration: none;
+}
+ALL
+.top-bar .right-items{
+    padding: 5px;
+}
+.top-bar .right-items i{
+    padding: 5px;
+}
+
+
+.middle-bar {
+    align-items: center;
+    padding: 0 180px;
+    justify-content: space-evenly;
+    background-color: #cacaca;
+    height: 100px;
+}
+
+
+.search-bar .all-items{
+    background-color: (13,82,214,1);
+}
+
+.search-bar .search-icon button{
+
+    background-color:  rgba(13,82,214,1);
+    height: 28px;
+    width: 30px;
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+
+.secondry-menu a {
+    color: rgb(81, 79, 79);
+    text-decoration: none;
+    padding-left: 10px;
+    display: inline-grid;
+    text-align: center;
+}
+
+.cart-menu a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgb(81, 79, 79);
+}
+
+
+
+
+
+
+.comm-pm {
+    /* margin-left: 8%; */
+    /* margin-right:10%; */
+    overflow: hidden !important;
+   
+}
+
+
+
+/* ************************
+Bottom-bar
+******************** */
+
+.bottom-bar{
+    background-color: rgba(13,82,214,1);
+}
+
+.bottom-bar-items{
+    height: 80px;
+    background-color:rgba(13,82,214,1);
+ 
+    align-items: center;
+    
+}
+
+
+
+.bottom-bar-items .multi li{
+
+    list-style: none;
+    padding-right: 10px;
+
+}
+
+.bottom-bar-items a{
+    text-decoration: none;
+    color: white;
+  
+}
+
+
+
+/* *************
+home banner
+************* */
+
+.home-banner-img{
+    /* background-color: aquamarine; */
+    width: 67%;
+    margin-top: 20px;
+}
+
+.car-img{
+    background-color: bisque;
+    height: 70vh;
+
+}
+
+.carousel-item img{
+    border-radius: 20px;
+}
+
+
+.side-img a{
+    background-color: rgba(41, 41, 55, 0);
+    overflow: hidden;
+}
+
+
+/* ****************
+delivery
+**************** */
+
+.boxes{
+    justify-content: space-around;
+}
+.delivery{
+    background-color: rgba(58,71,84,1);
+    /* flex-wrap: wrap;
+    /* justify-content: center; */
+  
+}
+
+.shipping{
+    margin-left: 110px;
+}
+.del-info .icon{
+    height: 70px;
+    width: 70px;
+    border: 3px solid rgba(13,82,214,1);
+   border-radius: 50px;
+   justify-content: center;
+   
+}
+
+
+
+
+.del-info .icon .fa-solid{
+   padding: 14px;
+   color:rgba(233, 102, 49, 1);
+}
+
+
+.del-info .desc{
+  margin-top: 10px;
+  margin-left: 5px;
+  color: rgb(126, 126, 126);
+}
+.del-info .desc h5{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: rgb(210, 208, 208);
+}
+
+
+.del-info{
+    display: flex;
+}
+
+
+/* **************
+why buy
+************** */
+.why-buy{
+    margin-top: 40px;
+}
+.comm-head{
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px; 
+    
+}
+
+.comm-head h3{
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px; 
+    font-weight: bold;
+    
+}
+
+.comm-head .comm-hr{
+  height: 4px;
+  width: 60px;
+  margin-top: 10px;
+ background-color: rgb(255, 23, 23);
+ margin: auto;
+
+}
+
+.comm-head .desc{
+  padding-top: 10px;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+.comm-grp-btn{
+    margin-top: 20px;
+    position: absolute;
+    left: 39%;
+    right: 39%;
+}
+
+.why-buy-cards{
+    margin-top: 100px;
+    /* margin-left: 200px; */
+}
+/* .comm-card{
+    margin-top: 80px;
+    padding-left: 20px;
+} */
+.comm-card .card button{
+   position: absolute;
+   width: 150px;
+   bottom: 50px;
+   left: 68px;
+}
+.comm-card img{
+  height: 300px;
+}
+
+
+/* ****************
+Featured Product
+**************** */
+
+.featured-product{
+    margin-top: 100px;
+}
+.featured-product .feat-comm-card .card img{
+
+    height: 350px;
+}
+
+
+.featured-product .feat-comm-card .card button{
+  
+    width: 150px;
+   
+ }
+
+
+ .featured-product-cards{
+    margin-top: 100px;
+  
+}
+
+.see-all-btn{
+    margin-top: 20px;
+    position: absolute;
+   
+    left: 46%;
+}
+
+
+
+
+
+
+
+/* 
+****************
+featured-category
+
+**************** */
+
+
+.featured-category{
+    margin-top: 100px;
+}
+
+
+.feat-cat-back{
+
+    width: 100%;
+}
+
+.col-md-2 {
+    flex: 0 0 auto;
+    width: 19.666667%;
+}
+
+
+
+
+
+/* ****************
+shop by brand
+****************** */
+
+
+.shop-by-brand{
+margin-top: 100px;
+margin-bottom: 100px;
+}
+.set-img{
+    margin-top: 20px;
+ 
+}
+
+.brand-img{
+ 
+    flex-wrap: wrap;
+}
+
+.set-img .inner-img {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    /* background-color: aqua; */
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+   
+}
+
+.col-md-1 {
+    flex: 0 0 auto;
+    width: 10.333333%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.set-img .inner-img img{
+    height: 110px;
+    width: 110px;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+
+
+
+
+
+/* ***********************
+Improved Gallery Module
+*********************** */
+
+.imp-gall-mod{
+     margin-top: 90px;
+    height: 500px;
+    color: #fffbfb;
+    background-color: rgba(58,71,84,1);
+}
+
+.imp-gall-mod .inner-img{
+border:none ;
+}
+
+.imp-gall-mod .inner-img img{
+    height: 130px;
+    width: 130px;
+    border-radius: 31px ;
+    }
+
+
+
+    /* ***********
+    our blog
+    *********** */
+
+
+.our-blog{
+
+    margin-bottom: 50px;
+
+}
+
+    .our-blog .feat-comm-cards{
+
+        width:25rem;
+    }
+
+
+
+
+
+
+
+
+ 
+    /* ************************************
+    What are people saying about us
+************************************    */
+
+
+
+.what-say{
+    margin-top: 50px;
+  
+}
+
+.what-say .card{
+    margin-top: 30px;
+}
+
+
+
+
+
+/* *****************
+social
+*****************  */
+.social{
+    margin-top: 100px;
+
+}
+
+.social .row{
+    justify-content: center;
+}
+
+.so-icon{
+display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 2rem;
+    
+
+
+}
+
+.so-icon .fa-brands{
+
+   color: rgb(36, 152, 248);
+    font-size: 50px;
+   
+}
+
+
+
+
+/* ***************
+    about us 
+***************  */
+.about{
+    margin-top: 60px;
+}
+
+
+.same-head{
+
+color: rgb(82, 82, 82);  
+ 
+}
+
+.about .divider{
+    border-bottom: 5px solid rgb(202, 99, 8); 
+    width: 40px;
+}
+
+.about ul {
+    padding-left: 0px;
+}
+
+
+.about li{
+    list-style: none;
+   
+}
+.about li a{
+    text-decoration: none;
+   
+}
+
+
+
+
+
+
+/* ************
+footer
+************ */
+
+.footer{
+    height:30px;
+    background-color: rgb(104, 104, 104);
+
+}
