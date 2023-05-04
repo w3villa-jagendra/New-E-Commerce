@@ -5,13 +5,7 @@
 
 
 
-.container{
 
-/* 
-width: ;
-background-color: aliceblue;
-margin-left: 20rem !important; */
-}
 
 /* main-bar */
 
@@ -153,11 +147,12 @@ delivery
 .boxes{
     justify-content: space-around;
 }
-.delivery{
+
+
+.delivery {
     background-color: rgba(58,71,84,1);
-    /* flex-wrap: wrap;
-    /* justify-content: center; */
-  
+    padding: 20px;
+    height: 100px;
 }
 
 .shipping{
