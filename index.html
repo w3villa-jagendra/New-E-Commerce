@@ -134,10 +134,22 @@
     <iframe src="header.html" width="100%" height="180px"></iframe>
 
 
+<!-- **********************
+    responsive-header
+********************** -->
+
+<div class="responsive-header">
+
+</div>
+
+
+<!-- *************
+home-banner
+************* -->
     <div class=" home-banner">
         <div class="container home-banner-img">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 car-img">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -147,15 +159,34 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner   ">
+                        <div class="carousel-inner">
                             <div class="carousel-item active ">
                                 <img src="img/s1-960x450h.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption car-text">
+                                    <button type="button" class="btn btn-primary">Layouts</button>
+                                    <h5>Sound that goes <br> straight to your heart </h5>
+                                    <button type="button" class="btn btn-outline-secondary">Shop Now</button>
+
+                                </div>
                             </div>
                             <div class="carousel-item">
+
                                 <img src="img/s2-960x450h.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption  car-text">
+                                    <button type="button" class="btn btn-primary">Layouts</button>
+                                    <h5>Most advance <br> admin in Opencart </h5>
+                                    <button type="button" class="btn btn-outline-secondary">Learn More</button>
+
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/s3-960x450h.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption car-text">
+                                    <button type="button" class="btn btn-primary">Layouts</button>
+                                    <h5>Best mobile solution <br> at any resolution </h5>
+                                    <button type="button" class="btn btn-outline-secondary">Learn More</button>
+
+                                </div>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -171,7 +202,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 set-side-img">
 
 
                     <div class="side-img img-1 ">
@@ -196,7 +227,7 @@
 
 
 
-    <!-- **********************
+ <!-- **********************
 Delivery
 ********************** -->
 
@@ -204,7 +235,7 @@ Delivery
     <div class=" delivery ">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 justify del-info">
+                <div class="col-md-3 col-sm-6 justify del-info">
                     <div class="icon ">
                         <a href="#"><i class="fa-solid fa-truck-fast fa-2x"></i></a>
                     </div>
@@ -213,7 +244,7 @@ Delivery
                         <p>Free delivery over $100</p>
                     </div>
                 </div>
-                <div class="col-md-3 del-info">
+                <div class="col-md-3 col-sm-6 del-info">
                     <div class="icon return">
                         <a href="#"><i class="fa-solid fa-share fa-2x"></i></a>
                     </div>
@@ -222,7 +253,7 @@ Delivery
                         <p>Hassle free returns</p>
                     </div>
                 </div>
-                <div class="col-md-3 del-info">
+                <div class="col-md-3 col-sm-6 del-info">
                     <div class="icon">
                         <a href="#"><i class="fa-solid fa-shield-halved fa-2x"></i></a>
                     </div>
@@ -231,7 +262,7 @@ Delivery
                         <p>Best security features</p>
                     </div>
                 </div>
-                <div class="col-md-3 del-info">
+                <div class="col-md-3 col-sm-6 del-info">
                     <div class="icon">
                         <a href="#"><i class="fa-solid fa-cube fa-2x"></i></a>
                     </div>
@@ -283,30 +314,31 @@ Delivery
         </div>
 
 
-        <div class="container">
+        <div class="container text-center">
             <div class="row why-buy-cards">
-                <div class="col-md-3 comm-card">
+                <div class="col-md-3 col-sm-6 mt-3 comm-card">
                     <div class="card" style="width: 15rem; height:300px">
+
                         <img src="img/bagcat-240x280h.jpg" class="card-img-top" alt="...">
                         <button type="button" class="btn btn-primary">Bag</button>
 
                     </div>
                 </div>
-                <div class="col-md-3 comm-card">
+                <div class="col-md-3 col-sm-6 mt-3 comm-card">
                     <div class="card" style="width: 15rem; height:300px">
                         <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
                         <button type="button" class="btn btn-primary">Home Decore</button>
 
                     </div>
                 </div>
-                <div class="col-md-3 comm-card">
+                <div class="col-md-3 col-sm-6 mt-3 comm-card">
                     <div class="card" style="width: 15rem; height:300px">
                         <img src="img/demo09-260x260.jpg" class="card-img-top fash" alt="...">
                         <button type="button" class="btn btn-primary">Fashion</button>
 
                     </div>
                 </div>
-                <div class="col-md-3 comm-card">
+                <div class="col-md-3 col-sm-6 mt-3 comm-card">
                     <div class="card" style="width: 15rem; height:300px">
                         <img src="img/bagcat-240x280h.jpg" class="card-img-top" alt="...">
                         <button type="button" class="btn btn-primary ">Fashion</button>
@@ -357,60 +389,138 @@ Featured Product
 
         <div class="container">
             <div class="row featured-product-cards">
-                <div class="col-md-3 feat-comm-card">
-                    <div class="card" style="width: 15rem; height:400px">
+                <div class="col-md-3 col-sm-12 mt-3 feat-comm-card">
+                    <div class="card" style="width: 18rem; height: 536px">
                         <img src="img/curved-oled-tv-55ec9300-by-lg-250x250.jpg" class="card-img-top" alt="...">
+                        <div class="card-header">
+                            <a href="#"> Samsung M1</a>
+                            <a href="#"> Model 291a </a>
+
+                        </div>
                         <div class="card-body">
                             <h6>Television</h6>
-                        </div>
-                        <div class="card-foot">
+
+                            <p class="price">$999 <del style="color:grey">$3,299</del></p>
                             <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
                             <button type="button" class="btn btn-primary">Television</button>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-md-3 feat-comm-card">
-                    <div class="card" style="width: 15rem; height:400px">
-                        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h6>Home</h6>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-right-left-large"></i>
                         </div>
                         <div class="card-foot">
-                            <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                            <button type="button" class="btn btn-primary">Home</button>
+                 
+                         
+                            <a href="#">Questions</a>
+                            <a href="#"><i class="fa-regular fa-circle-dollar"></i> Buy Now</a>
+                             
+                        
+
+
+
+
                         </div>
 
+
                     </div>
+
                 </div>
-                <div class="col-md-3 feat-comm-card">
-                    <div class="card" style="width: 15rem; height:400px">
-                        <img src="img/beauty-240x280h.jpg" class="card-img-top fash" alt="...">
+
+
+                <div class="col-md-3 col-sm-12 mt-3 feat-comm-card">
+                    <div class="card" style="width: 18rem; height: 536px">
+                        <img src="img/airmax_6-250x250.jpg" class="card-img-top" alt="...">
+                        <div class="card-header">
+                            <a href="#"> Samsung M1</a>
+                            <a href="#"> Model 291a </a>
+
+                        </div>
                         <div class="card-body">
-                            <h6>Health and Beauty </h6>
-                            <p></p>
+                            <h6>Television</h6>
+
+                            <p class="price">$999 <del style="color:grey">$3,299</del></p>
+                            <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
+                            <button type="button" class="btn btn-primary">Television</button>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-right-left-large"></i>
                         </div>
                         <div class="card-foot">
-                            <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                            <button type="button" class="btn btn-primary">Beauty</button>
+                                                   
+                            <a href="#">Questions</a>
+                            <a href="#"><i class="fa-regular fa-circle-dollar"></i> Buy Now</a>
+
+
+
                         </div>
+
 
                     </div>
                 </div>
-                <div class="col-md-3 feat-comm-card">
-                    <div class="card" style="width: 15rem; height:400px">
-                        <img src="img/bagcat-240x280h.jpg" class="card-img-top" alt="...">
+
+
+                <div class="col-md-3 col-sm-12 mt-3 feat-comm-card">
+                    <div class="card" style="width: 18rem; height: 536px">
+                        <img src="img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg" class="card-img-top" alt="...">
+                        <div class="card-header">
+                            <a href="#"> Samsung M1</a>
+                            <a href="#"> Model 291a </a>
+
+                        </div>
                         <div class="card-body">
-                            This is some text within a card body.
+                            <h6>Television</h6>
+
+                            <p class="price">$999 <del style="color:grey">$3,299</del></p>
+                            <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
+                            <button type="button" class="btn btn-primary">Television</button>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-right-left-large"></i>
                         </div>
                         <div class="card-foot">
-                            <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                            <button type="button" class="btn btn-primary">Bag</button>
+                                                   
+                            <a href="#">Questions</a>
+                            <a href="#"><i class="fa-regular fa-circle-dollar"></i> Buy Now</a>
+
+
+
+
                         </div>
+
 
                     </div>
                 </div>
+
+
+                <div class="col-md-3 col-sm-12 mt-3 feat-comm-card">
+                    <div class="card" style="width: 18rem; height: 536px">
+                        <img src="img/leica-m9-digital-camera-by-leica-250x250.jpg" class="card-img-top" alt="...">
+                        <div class="card-header">
+                            <a href="#"> Samsung M1</a>
+                            <a href="#"> Model 291a </a>
+
+                        </div>
+                        <div class="card-body">
+                            <h6>Television</h6>
+
+                            <p class="price">$999 <del style="color:grey">$3,299</del></p>
+                            <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
+                            <button type="button" class="btn btn-primary">Television</button>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-right-left-large"></i>
+                        </div>
+                        <div class="card-foot">
+                                                  
+                            <a href="#">Questions</a>
+                            <a href="#"><i class="fa-regular fa-circle-dollar"></i> Buy Now</a>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
 
@@ -442,20 +552,25 @@ Featured Product
             </div>
         </div>
 
-        <div class="feat-cat-back">
+        <div class="feat-cat-background">
 
             <div class="container">
                 <div class="row featured-product-cards">
-                    <div class="col-md-2 feat-comm-card">
-                        <div class="card" style="width: 15rem; height:400px">
+                    <div class="col-md-2 feat-comm-card left-cart-grey">
+                        <div class="card left-cart-grey" style="width: 15rem; height:400px">
+                            <div class="head">
+                                <h5> <span> Appliance</span></h5>
+
+                            </div>
+
+
                             <img src="img/curved-oled-tv-55ec9300-by-lg-250x250.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h6>Television</h6>
+                                <p>Kitchen Appliance</p>
+
+                                <a href="#">See all in appliance</a>
                             </div>
-                            <div class="card-foot">
-                                <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                                <button type="button" class="btn btn-primary">Television</button>
-                            </div>
+
 
 
                         </div>
@@ -464,12 +579,19 @@ Featured Product
                         <div class="card" style="width: 15rem; height:400px">
                             <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h6>Home</h6>
+                                <a href="#">
+                                    <h6>Home</h6>
+                                </a>
+                                <span>$399.00</span>
+
+                                <div class="foot">
+
+                                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </div>
                             </div>
-                            <div class="card-foot">
-                                <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                                <button type="button" class="btn btn-primary">Home</button>
-                            </div>
+
 
                         </div>
                     </div>
@@ -477,13 +599,19 @@ Featured Product
                         <div class="card" style="width: 15rem; height:400px">
                             <img src="img/beauty-240x280h.jpg" class="card-img-top fash" alt="...">
                             <div class="card-body">
-                                <h6>Health and Beauty </h6>
-                                <p></p>
+                                <a href="#">
+                                    <h6>Health and Beauty </h6>
+                                </a>
+                                <span>$339.00</span>
+                                <div class="foot">
+
+                                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </div>
+
                             </div>
-                            <div class="card-foot">
-                                <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                                <button type="button" class="btn btn-primary">Beauty</button>
-                            </div>
+
 
                         </div>
                     </div>
@@ -491,12 +619,18 @@ Featured Product
                         <div class="card" style="width: 15rem; height:400px">
                             <img src="img/bagcat-240x280h.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                This is some text
+                                <a href="#">
+                                    <h6>Bag</h6>
+                                </a>
+                                <span>$999.00</span>
+                                <div class="foot">
+
+                                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </div>
                             </div>
-                            <div class="card-foot">
-                                <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                                <button type="button" class="btn btn-primary">Bag</button>
-                            </div>
+
 
                         </div>
                     </div>
@@ -504,12 +638,19 @@ Featured Product
                         <div class="card" style="width: 15rem; height:400px">
                             <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h6>Home</h6>
+                                <a href="#">
+                                    <h6>Home</h6>
+                                </a>
+                                <span>$399.00</span>
+
+                                <div class="foot">
+
+                                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </div>
                             </div>
-                            <div class="card-foot">
-                                <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                                <button type="button" class="btn btn-primary">Bag</button>
-                            </div>
+
 
                         </div>
                     </div>

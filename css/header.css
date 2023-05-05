@@ -18,9 +18,7 @@
 
 
                           /* top-bar */
-/* .top-menu{
-    max-width: 1280px;
-} */
+
 .top-menu{
    
 
@@ -32,11 +30,16 @@
 }
 
 
+
+
 .top-menu .left-menu{
 
     padding-top: 16px;
 }
 
+.top-menu .left-menu .menu   ol, ul {
+    padding-left: 0px;
+}
 
 
                                               /* medium-bar */   
@@ -223,6 +226,13 @@ color: black;
 ********************* */
 
 
-@media screen (max){
+@media screen and (max-width:1200px){
+  
+    .search-bar{
+        width: auto;
+    }
+    .search-bar .search-input input{
+        width: 15rem ;
+    }
     
 }
