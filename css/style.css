@@ -1,17 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 
 
-.container{
 
-/* 
-width: ;
-background-color: aliceblue;
-margin-left: 20rem !important; */
-}
 
 /* main-bar */
 
@@ -119,6 +114,47 @@ Bottom-bar
 
 
 
+
+/* *****************
+responsive header
+***************** */
+
+.responsive-header{
+    height: 40px;
+    background-color: rgba(13, 82, 214, 1);
+  
+}
+
+.responsive-bar{
+    display: flex;
+    height: 40px;
+  
+ 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.responsive-bar li{
+    list-style: none;
+    float: left;
+}
+
+
+
+.responsive-bar  a{
+    color: white;
+    text-decoration: none;
+    padding-right: 5px;
+
+}
+
+
+
+
+
+
+
 /* *************
 home banner
 ************* */
@@ -146,8 +182,9 @@ home banner
 }
 
 .home-banner .side-img img{
-    width: 90%;
-    height: 90%;
+    width: 69%;
+
+    float: right;
     background-color: #dd1c1c00;
     margin-bottom: 30px;
 } 
@@ -173,8 +210,6 @@ text-align: start;
 position: relative;
 bottom: 5rem;
 right: 6rem;
-
-
 }
 
 .side-img a{
@@ -185,8 +220,25 @@ right: 6rem;
 }
 
 
+.side-img span{
+    color: blue;
+    font-size: 1rem;
+}
+
+.side-img-text{
+    position:absolute;
+    left: 2px;
+    top: 40px;
+}
+.side-img-text-2{
+    position: absolute;
+    left: 2px;
+    top: 17rem;
+}
+
+
 .home-banner .set-side-img{
-    padding-left: 77px;
+    /* padding-left: 77px;       */
 }
 
 
@@ -548,7 +600,12 @@ border:none ;
     }
 
 
-
+.our-blog .comm-grp-btn{
+    margin-top: 20px;
+    position: relative;
+    left: 44%;
+    right: 39%;
+}
 
 
 
@@ -641,6 +698,23 @@ color: rgb(82, 82, 82);
    
 }
 
+.about .email input{
+    border: unset;
+    width: 240px;
+  
+}
+
+.about .btn .btn-primary{
+  border-radius: 0px !important;
+}
+
+
+.about .email{
+    border: 2px solid black;
+    display: flex;
+    border-radius: 5px;
+    height: 50px;
+}
 
 
 
@@ -669,9 +743,23 @@ Media Query
     .why-buy-cards .comm-card{
         margin-right: 5px;
     }
+
+    .side-img-text-2{
+        position: absolute;
+        left: 2px;
+        top: 9rem;
+    }
     
 }
 
+
+@media screen and (min-width:991px) {
+
+     .responsive-header{
+        display: none;
+     }
+
+    }
 @media screen and (max-width:991px) {
 
 
@@ -685,6 +773,18 @@ Media Query
    
     left: 30%;
    }
+
+
+
+iframe{
+    display: none;
+}
+
+.side-img-text-2{
+    position: absolute;
+    left: 2px;
+    top: 9rem !important;
+}
 }
 
 @media(max-width:1399px)
@@ -712,6 +812,12 @@ Media Query
     {
         margin-bottom: 15px;
     }
+
+    .side-img-text-2{
+        position: absolute;
+        left: 2px;
+        top: 14rem;
+    }
 }
 @media(max-width:768px)
 {
@@ -719,6 +825,14 @@ Media Query
     {
         display: flex;
     }
+
+    .side-img-text-2{
+        position: absolute;
+        left: 28px;
+        top: 2rem !important;
+    }
+
+  
 
     .why-buy-cards{
 
@@ -731,4 +845,6 @@ Media Query
       left: 20%; */
         /* height: 300px; */
     }
+
+
 }
