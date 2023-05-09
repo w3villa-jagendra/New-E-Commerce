@@ -182,7 +182,7 @@ home banner
 }
 
 .home-banner .side-img img{
-    width: 69%;
+    width: 65%;
 
     float: right;
     background-color: #dd1c1c00;
@@ -212,11 +212,27 @@ bottom: 5rem;
 right: 6rem;
 }
 
-.side-img a{
-    background-color: rgba(41, 41, 55, 0);
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+.home-banner .carousel-item{
+    margin-bottom: 10px;
+}
+
+.side-img a {
+
+    margin-left: 12px;
+}
+
+
+.set-side-img{
+    margin-left: inherit;
+}
+
+.side-img {
+    background-color: #e7e7e7;
+   margin-left: 1.1rem;
+    border-radius: 10px;
+    position: relative;
+    width: 93%;
+    margin-bottom: 2rem;
 }
 
 
@@ -225,21 +241,22 @@ right: 6rem;
     font-size: 1rem;
 }
 
+
+
+
+
 .side-img-text{
-    position:absolute;
-    left: 2px;
-    top: 40px;
-}
-.side-img-text-2{
     position: absolute;
     left: 2px;
-    top: 17rem;
+    top: 2.9rem;
+    font-size: 1.2rem;
 }
 
 
-.home-banner .set-side-img{
-    /* padding-left: 77px;       */
-}
+
+
+
+
 
 
 /* ****************
@@ -344,6 +361,12 @@ why buy
  
 }
 
+.why-card img{
+    display: block;
+    width: 100%;
+    height: 333px;
+  
+}
 
 
 .why-buy-cards{
@@ -353,24 +376,125 @@ why buy
 
 
 
-
-.why-buy-cards .comm-card .card button{
-   position: absolute;
-   width: 60%;
-   bottom: 10%;
-   left: 50px;
+.why-buy .card{
+    height: 333px;
 }
+
+
+
+ .why-card  button {
+    width: 55%;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    bottom: 79px;
+    left: 25%;
+}
+
+
 
 
 .why-buy-cards .comm-card img{
     display: flex;
     flex: wrap;
-    height: 300px;
+    height: 300px;  
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ************ why-buy .owl-carousel*********** */
+.owl-carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.owl-carousel .item {
+    font-size: 30px;
+    text-align: center;
+    /* padding: 40px 20px; */
+    line-height: 2;
+    font-weight: 700;
+    background-color: #eee;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.owl-nav button span {
+    font-size: 30px;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+.owl-carousel .owl-nav {
+    margin: 0;
+}
+.btn-wrap {
+    text-align: center;
+    width: 100%;
+}
+
+.owl-theme .owl-nav .disabled,
+button.disabled {
+    opacity: 0.6;
 }
 
 
 
-
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+  }
+  
+  /* fix blank or flashing items on carousel */
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+  }
+  
+  /* end fix */
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
 
 
 /* ****************
@@ -566,13 +690,25 @@ Improved Gallery Module
 
 .imp-gall-mod{
      margin-top: 90px;
-    height: 500px;
+ 
     color: #fffbfb;
     background-color: rgba(58,71,84,1);
 }
 
 .imp-gall-mod .inner-img{
 border:none ;
+margin-bottom: 50px;
+display: flex;
+
+}
+
+/* .imp-gall-mod .col-md-4{
+
+} */
+
+.gallery-mod-row{
+    display: flex;
+    justify-content: space-evenly ;
 }
 
 .imp-gall-mod .inner-img img{
@@ -581,7 +717,12 @@ border:none ;
     border-radius: 31px ;
     }
 
-
+.gall-img img{
+    height: 50px;
+    width: 50px;
+   
+    padding-left: 10px;
+}
 
     /* ***********
     our blog
@@ -733,7 +874,6 @@ footer
 
 
 
-
 /* ************* 
 Media Query
 *************** */
@@ -744,10 +884,11 @@ Media Query
         margin-right: 5px;
     }
 
-    .side-img-text-2{
+    .side-img-text{
         position: absolute;
         left: 2px;
-        top: 9rem;
+        top: 1.6rem;
+        font-size: 1rem;
     }
     
 }
@@ -780,10 +921,11 @@ iframe{
     display: none;
 }
 
-.side-img-text-2{
+.side-img-text{
     position: absolute;
     left: 2px;
-    top: 9rem !important;
+    top: 1rem !important;
+    font-size: .8rem;
 }
 }
 
@@ -813,10 +955,11 @@ iframe{
         margin-bottom: 15px;
     }
 
-    .side-img-text-2{
+    .side-img-text{
         position: absolute;
         left: 2px;
-        top: 14rem;
+        top: 2rem;
+        font-size: 1.1rem;
     }
 }
 @media(max-width:768px)
@@ -826,10 +969,18 @@ iframe{
         display: flex;
     }
 
-    .side-img-text-2{
+
+    .row .side-img .img-a{
+        position: relative;
+        margin-left: 0px !important;
+    }
+
+
+    .side-img-text{
         position: absolute;
-        left: 28px;
+        left: 2px;
         top: 2rem !important;
+        font-size: .8rem;
     }
 
   
