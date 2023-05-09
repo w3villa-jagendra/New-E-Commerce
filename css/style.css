@@ -310,6 +310,7 @@ delivery
 
 .del-info{
     display: flex;
+    justify-content: center;
 }
 
 
@@ -376,9 +377,9 @@ why buy
 
 
 
-.why-buy .card{
+/* .why-buy .card{
     height: 333px;
-}
+} */
 
 
 
@@ -391,8 +392,8 @@ why buy
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    position: relative;
-    bottom: 79px;
+    position: absolute;
+    bottom: 50px;
     left: 25%;
 }
 
@@ -414,13 +415,14 @@ why buy
     margin: 0 auto;
     padding: 30px 0;
 }
+
 .owl-carousel .item {
-    font-size: 30px;
-    text-align: center;
+    /* font-size: 30px; */
+    /* text-align: center; */
     /* padding: 40px 20px; */
-    line-height: 2;
+    /* line-height: 2;
     font-weight: 700;
-    background-color: #eee;
+    background-color: #eee; */
 }
 
 .owl-carousel .owl-nav button.owl-prev,
@@ -463,9 +465,9 @@ button.disabled {
 
 
 .carousel-wrap {
-    margin: 90px auto;
+    /* margin: 90px auto; */
     padding: 0 5%;
-    width: 80%;
+    /* width: 80%; */
     position: relative;
   }
   
@@ -500,6 +502,7 @@ button.disabled {
 /* ****************
 Featured Product
 **************** */
+
 
 .featured-product{
     margin-top: 100px;
@@ -554,6 +557,19 @@ color: rgb(123, 122, 122);
     justify-content: space-around;
 }
 
+
+/* featured-product owl-carousel */
+
+.featured-product .owl-carousel .item {
+    /* font-size: 30px; */
+    /* text-align: center; */
+    /* padding: 40px 20px; */
+    display: flex;  
+    justify-content: center;
+    line-height: 2;
+    font-weight: 700;
+    /* background-color: #eee; */
+}
 
 
 
@@ -612,7 +628,7 @@ featured-category
     padding-left: 5px;
     padding-bottom: 10px;
     border-bottom: 3px solid rgb(231, 75, 75);
-    
+    display: block;
     
 }
 
@@ -620,7 +636,7 @@ featured-category
 .featured-category .card-body .foot{
 
   padding-bottom: 30px; 
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 }
 
@@ -680,6 +696,22 @@ margin-bottom: 100px;
     
 }
 
+
+/* ***************shop by brand owl-carsoule ******** */
+
+.shop-by-brand .owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+  }
+  
+
+ .owl-item .active{
+    width: 0px;
+    margin-right: 5px;
+}
 
 
 
