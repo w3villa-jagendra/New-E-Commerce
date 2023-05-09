@@ -416,14 +416,17 @@ why buy
     padding: 30px 0;
 }
 
-.owl-carousel .item {
+/* .owl-carousel .item { */
     /* font-size: 30px; */
     /* text-align: center; */
     /* padding: 40px 20px; */
     /* line-height: 2;
     font-weight: 700;
     background-color: #eee; */
-}
+/* } */
+
+
+
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
@@ -757,7 +760,7 @@ display: flex;
 }
 
     /* ***********
-    our blog
+  from  our blog
     *********** */
 
 
@@ -769,7 +772,12 @@ display: flex;
 
     .our-blog .feat-comm-cards{
 
-        width:25rem;
+        width:16rem;
+    }
+
+    .our-blog  .owl-carousel .item{
+        display: flex;
+        justify-content: center;
     }
 
 
