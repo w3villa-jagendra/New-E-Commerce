@@ -601,6 +601,8 @@ featured-category
 
 .featured-category{
     margin-top: 100px;
+    background-color: #ececec;
+    padding-bottom: 50px;
 }
 
 .feat-cat-background{
@@ -609,45 +611,71 @@ featured-category
 }
 
 
-.featured-category .left-cart-grey{
-  border: none;
-  background-color: #cacaca;
+.featured-category .left-cart-grey {
+    border: none;
+    background-color: #cacaca;
+    margin-left: -6px;
+    border-radius: 0px;
+}
+
+.featured-category .card {
+    width: 91%;
+    height: 100%;
 }
 
 
-.featured-category .left-cart-grey img{
+.featured-category .left-cart-grey img {
     margin-top: 20px;
     position: relative;
-    left: -2px;
-    width: 100%;
+    left: 18px;
+    width: 93%;
 }
 
 
 
 
-.featured-category .left-cart-grey .head span{
-
+.featured-category .left-cart-grey .head span {
     padding-top: 5px;
     padding-left: 5px;
+    margin-left: 18px;
     padding-bottom: 10px;
     border-bottom: 3px solid rgb(231, 75, 75);
-    display: block;
-    
 }
 
 
 .featured-category .card-body .foot{
 
   padding-bottom: 30px; 
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
+
 }
+
+.featured-category .card-body .foot .fa-heart:hover{
+  color: red;
+  
+}
+
 
 .col-md-2 {
     flex: 0 0 auto;
     width: 19.666667%;
 }
 
+
+/* *******featured-category owl carsoule css***** */
+
+.feat-cat-background .owl-carousel  {
+
+    width: 80%;
+
+  }
+
+
+.feat-cat-background .container{
+    margin-top: 50px;
+    background-color: #ffffff;
+}
 
 
 
@@ -770,9 +798,9 @@ display: flex;
 
 }
 
-    .our-blog .feat-comm-cards{
-
-        width:16rem;
+    .our-blog .cards {
+        width: 16rem;
+        height: 400px;
     }
 
     .our-blog  .owl-carousel .item{
