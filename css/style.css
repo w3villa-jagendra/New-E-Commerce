@@ -769,10 +769,6 @@ shop by brand
 }
 
 
-.owl-item .active {
-    width: 0px;
-    margin-right: 5px;
-}
 
 
 
@@ -1034,6 +1030,12 @@ social
 }
 
 
+.about .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    border-right: 2px solid #a1a1a1;
+}
+
 
 
 
@@ -1170,13 +1172,12 @@ Media Query
     }
 
 
+
     .side-img-text {
-        position: absolute;
-        left: 2px;
-        top: 2rem !important;
+    
+      
         font-size: .8rem;
     }
-
 
 
     .why-buy-cards {
