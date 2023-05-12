@@ -271,23 +271,28 @@ delivery
 .delivery {
     background-color: rgba(58, 71, 84, 1);
     padding: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+ 
 
 }
 
-.shipping {
+/* .shipping {
     margin-left: 110px;
+} */
+
+
+.delivery .row{
+    justify-content: space-between;
 }
 
-.del-info .icon {
-    height: 70px;
-    width: 70px;
+/* .del-info .icon {
+    height: 80%;
+    width: 32%;
     border: 3px solid rgba(13, 82, 214, 1);
     border-radius: 50px;
+    display: flex;
     justify-content: center;
-
-}
+    align-items: center;
+} */
 
 
 
@@ -295,6 +300,16 @@ delivery
 .del-info .icon .fa-solid {
     padding: 14px;
     color: rgba(233, 102, 49, 1);
+    font-size: 200%;
+    border: 2px solid blanchedalmond ;
+    border-radius: 100px;
+}
+
+
+.delivery .justify .del-info .fa-solid .fa-truck-fast {
+    font-size: 150%;
+    padding-top: 30%;
+    padding-bottom: 25%;
 }
 
 
@@ -302,6 +317,7 @@ delivery
     width: 171px;
     margin-top: 10px;
     margin-left: 5px;
+    text-align: left;
     color: rgb(126, 126, 126);
 }
 
@@ -312,9 +328,12 @@ delivery
 }
 
 
+
 .del-info {
     display: flex;
+    flex-basis: content;
     justify-content: center;
+  
 }
 
 
@@ -1035,6 +1054,41 @@ footer
 Media Query
 *************** */
 
+
+
+@media(max-width:1399px) {
+    .home-banner .car-text h5 {
+        font-size: 1.2rem;
+        bottom: 0rem;
+        right: 0rem;
+    }
+
+    .home-banner .car-text .btn-outline-secondary {
+        bottom: 0rem;
+        right: 42%;
+        font-size: 0.7rem;
+    }
+
+    .home-banner .car-text .btn-primary {
+        margin-bottom: 5px;
+        bottom: 0rem;
+        right: 44%;
+        font-size: 0.7rem;
+    }
+
+    .home-banner .side-img img {
+        margin-bottom: 15px;
+    }
+
+    .side-img-text {
+        position: absolute;
+        left: 2px;
+        top: 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+
 @media screen and (max-width:1199px) {
 
     .why-buy-cards .comm-card {
@@ -1085,39 +1139,24 @@ Media Query
         top: 1rem !important;
         font-size: .8rem;
     }
-}
-
-@media(max-width:1399px) {
-    .home-banner .car-text h5 {
-        font-size: 1.2rem;
-        bottom: 0rem;
-        right: 0rem;
-    }
 
     .home-banner .car-text .btn-outline-secondary {
         bottom: 0rem;
-        right: 38%;
+        right: 37.4%;
         font-size: 0.7rem;
     }
 
     .home-banner .car-text .btn-primary {
         margin-bottom: 5px;
         bottom: 0rem;
-        right: 38%;
+        right: 40%;
         font-size: 0.7rem;
     }
-
-    .home-banner .side-img img {
-        margin-bottom: 15px;
-    }
-
-    .side-img-text {
-        position: absolute;
-        left: 2px;
-        top: 2rem;
-        font-size: 1.1rem;
-    }
 }
+
+
+
+
 
 @media(max-width:768px) {
     .set-side-img {
@@ -1152,5 +1191,14 @@ Media Query
         /* height: 300px; */
     }
 
+    .delivery .row {
+        justify-content: center;
+    }
+
+    .comm-grp-btn {
+        position: relative;
+
+        left: 15%;
+    }
 
 }
