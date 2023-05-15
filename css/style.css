@@ -725,7 +725,13 @@ featured-category
     background-color: #ffffff;
 }
 
-
+.featured-category .feat-cat-background .owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+}
 
 
 /* ****************
@@ -810,9 +816,10 @@ Improved Gallery Module
 
 }
 
-/* .imp-gall-mod .col-md-4{
-
-} */
+.imp-gall-mod .row>* {
+     display: flex;
+    justify-content: center;
+}
 
 .gallery-mod-row {
     display: flex;
