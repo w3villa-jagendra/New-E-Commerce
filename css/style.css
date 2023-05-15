@@ -601,11 +601,14 @@ Featured Product
 .featured-product .rotated-lable {
     background-color: blue;
     color: white;
-    display: flex;
+  
+    width: 62%;
     justify-content: center;
+    position: absolute;
     text-align: center;
-    font-size: 13px;
-    transform: translate3d(-94px, 37px, 0) rotate(-45deg);
+    display: block;
+    font-size: 11px;
+    transform: translate3d(-42px, 37px, 0) rotate(-45deg);
 }
 
 .featured-product .feat-comm-card .card button {
