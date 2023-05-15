@@ -417,7 +417,7 @@ why buy
     justify-content: center;
     cursor: pointer;
     position: absolute;
-    bottom: 50px;
+    bottom: 31px;
     left: 25%;
 }
 
@@ -540,12 +540,23 @@ Featured Product
 }
 
 
+.comman-grp-btn{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .featured-product .feat-comm-card .card img {
 
     height: 350px;
 }
 
+.featured-product .card{
+    width: 18rem;
+    height: 536px;
+}
 
 .featured-product .feat-comm-card .card button {
 
@@ -555,10 +566,10 @@ Featured Product
 }
 
 
-.featured-product-cards {
+/* .featured-product-cards {
     margin-top: 100px;
 
-}
+} */
 
 .featured-product .card-header {
     background-color: #f5f2f2;
@@ -584,9 +595,10 @@ Featured Product
     text-align: center;
 }
 
-.card-foot {
+.featured-product .card-foot {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #e6e6e6;
 }
 
 
@@ -609,10 +621,8 @@ Featured Product
 
 
 .see-all-btn {
-    margin-top: 20px;
-    position: absolute;
-
-    left: 46%;
+   display: flex;
+   justify-content: center;
 }
 
 
@@ -699,6 +709,11 @@ featured-category
     width: 80%;
 
 }
+
+/* .feat-cat-background .card{
+    width: 15rem;
+    height: 400px;
+} */
 
 
 .feat-cat-background .container {
@@ -835,12 +850,12 @@ Improved Gallery Module
 }
 
 
-.our-blog .comm-grp-btn {
+/* .our-blog .comm-grp-btn {
     margin-top: 20px;
     position: relative;
     left: 44%;
     right: 39%;
-}
+} */
 
 
 
@@ -860,6 +875,8 @@ Improved Gallery Module
 
 .what-say .card {
     margin-top: 30px;
+    text-align: center;
+
 }
 
 
@@ -1011,32 +1028,36 @@ social
 
 }
 
-.about .email input {
+/* .about .email input {
     border: unset;
     width: 240px;
 
-}
+} */
 
-.about .btn .btn-primary {
-    border-radius: 0px !important;
+.about .news .btn .btn-primary {
+  
 }
 
 
 .about .email {
-    border: 2px solid black;
-    display: flex;
-    border-radius: 5px;
-    height: 50px;
+  
+    display: flex;  
 }
 
+.about input{
+    width: 45%;
+    border: 2px solid black;
+    font-size: none;
+    }
 
 .about .col-md-3 {
-    flex: 0 0 auto;
-    width: 25%;
+  
     border-right: 2px solid #a1a1a1;
 }
 
-
+.about .news{
+    border: unset;
+}
 
 
 /* ************
@@ -1154,6 +1175,12 @@ Media Query
         right: 40%;
         font-size: 0.7rem;
     }
+
+
+
+    .feat-cat-background .owl-carousel {
+        width: 62%;
+    }
 }
 
 
@@ -1196,10 +1223,12 @@ Media Query
         justify-content: center;
     }
 
-    .comm-grp-btn {
-        position: relative;
+  
 
-        left: 15%;
+    .comman-grp-btn{
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
     }
 
 }
