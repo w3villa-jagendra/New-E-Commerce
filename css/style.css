@@ -620,6 +620,16 @@ Featured Product
 }
 
 
+/* *************icon color********* */
+
+.featured-product .card-foot .fa-circle-question{
+    color: red;
+}
+.featured-product .card-foot .fa-dollar-sign{
+    color:green;
+}
+
+
 
 
 
