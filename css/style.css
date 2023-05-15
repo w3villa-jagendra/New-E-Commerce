@@ -558,6 +558,56 @@ Featured Product
     height: 536px;
 }
 
+
+
+.featured-product .comman-lable .lable-1 {
+    background-color: #ffd357;
+    position: absolute;
+    right: 4px;
+    font-size: small;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    top: 9px;
+}
+.featured-product .comman-lable .lable-2 {
+    background-color: #ff0000;
+    position: absolute;
+    right: 4px;
+    font-size: small;
+    color: white;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    top: 43px;
+}
+
+.featured-product .comman-lable .lable-3 {
+    background-color:rgb(255, 123, 0);
+    color:white ;
+    position: absolute;
+    right: 4px;
+    font-size: small;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    top: 9px;
+}
+
+
+.featured-product .rotated-lable {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    transform: translate3d(-94px, 37px, 0) rotate(-45deg);
+}
+
 .featured-product .feat-comm-card .card button {
 
     width: 100px;
@@ -608,6 +658,7 @@ Featured Product
 
 /* featured-product owl-carousel */
 
+
 .featured-product .owl-carousel .item {
     /* font-size: 30px; */
     /* text-align: center; */
@@ -615,6 +666,7 @@ Featured Product
     display: flex;
     justify-content: center;
     line-height: 2;
+    width: fit-content;
     font-weight: 700;
     /* background-color: #eee; */
 }
