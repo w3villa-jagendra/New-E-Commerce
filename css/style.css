@@ -152,6 +152,104 @@ responsive header
 }
 
 
+/* *************
+owl-carsoule
+************* */
+.owl-carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* .owl-carousel .item { */
+/* font-size: 30px; */
+/* text-align: center; */
+/* padding: 40px 20px; */
+/* line-height: 2;
+    font-weight: 700;
+    background-color: #eee; */
+/* } */
+
+
+
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.owl-nav button span {
+    font-size: 30px;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+.owl-carousel .owl-nav {
+    margin: 0;
+}
+
+.btn-wrap {
+    text-align: center;
+    width: 100%;
+}
+
+.owl-theme .owl-nav .disabled,
+button.disabled {
+    opacity: 0.6;
+}
+
+
+
+.carousel-wrap {
+    /* margin: 90px auto; */
+    padding: 0 5%;
+    /* width: 80%; */
+    position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav>div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+}
+
 
 
 
@@ -433,102 +531,14 @@ why buy
 }
 
 /* ************ why-buy .owl-carousel*********** */
-.owl-carousel {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 30px 0;
+
+.why-buy  .owl-carousel .owl-nav button.owl-prev {
+    left: -60px;
 }
 
-/* .owl-carousel .item { */
-/* font-size: 30px; */
-/* text-align: center; */
-/* padding: 40px 20px; */
-/* line-height: 2;
-    font-weight: 700;
-    background-color: #eee; */
-/* } */
-
-
-
-
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next {
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translatey(-50%);
+.why-buy .owl-carousel .owl-nav button.owl-next {
+    right: -60px;
 }
-
-.owl-nav button span {
-    font-size: 30px;
-    height: 100%;
-    display: block;
-    width: 100%;
-}
-
-.owl-carousel .owl-nav button.owl-prev {
-    left: 0;
-}
-
-.owl-carousel .owl-nav button.owl-next {
-    right: 0;
-}
-
-.owl-carousel .owl-nav {
-    margin: 0;
-}
-
-.btn-wrap {
-    text-align: center;
-    width: 100%;
-}
-
-.owl-theme .owl-nav .disabled,
-button.disabled {
-    opacity: 0.6;
-}
-
-
-
-.carousel-wrap {
-    /* margin: 90px auto; */
-    padding: 0 5%;
-    /* width: 80%; */
-    position: relative;
-}
-
-/* fix blank or flashing items on carousel */
-.owl-carousel .item {
-    position: relative;
-    z-index: 100;
-    -webkit-backface-visibility: hidden;
-}
-
-/* end fix */
-.owl-nav>div {
-    margin-top: -26px;
-    position: absolute;
-    top: 50%;
-    color: #cdcbcd;
-}
-
-.owl-nav i {
-    font-size: 52px;
-}
-
-.owl-nav .owl-prev {
-    left: -30px;
-}
-
-.owl-nav .owl-next {
-    right: -30px;
-}
-
-
 /* ****************
 Featured Product
 **************** */
@@ -671,6 +681,15 @@ Featured Product
     width: fit-content;
     font-weight: 700;
     /* background-color: #eee; */
+}
+
+
+.featured-product  .owl-carousel .owl-nav button.owl-prev {
+    left: -60px;
+}
+
+.featured-product .owl-carousel .owl-nav button.owl-next {
+    right: -40px;
 }
 
 
