@@ -10,7 +10,7 @@
 
 /* main-bar */
 
-.top-bar_main {
+/* .top-bar_main {
     background-color: #fffefe;
     display: flex;
     justify-content: space-evenly;
@@ -68,17 +68,18 @@
     color: rgb(81, 79, 79);
 }
 
+*/
 
 
-
-
+/*
 
 .comm-pm {
     /* margin-left: 8%; */
     /* margin-right:10%; */
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
 
-}
+/* } */
+
 
 
 
@@ -86,7 +87,7 @@
 Bottom-bar
 ******************** */
 
-.bottom-bar {
+/* .bottom-bar {
     background-color: rgba(13, 82, 214, 1);
 }
 
@@ -111,9 +112,9 @@ Bottom-bar
     text-decoration: none;
     color: white;
 
-}
+} */
 
-
+ 
 
 
 /* *****************
@@ -223,9 +224,7 @@ home banner
 }
 
 
-.set-side-img {
-    margin-left: inherit;
-}
+
 
 .side-img {
     background-color: #e7e7e7;
@@ -341,7 +340,7 @@ delivery
 why buy
 ************** */
 .why-buy {
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .comm-head {
@@ -1213,6 +1212,11 @@ Media Query
         display: none;
     }
 
+    .set-side-img {
+      
+        margin-left: -14px;
+    }
+
 }
 
 @media screen and (max-width:991px) {
@@ -1267,9 +1271,9 @@ Media Query
 
 
 @media(max-width:768px) {
-    .set-side-img {
+    /* .set-side-img {
         display: flex;
-    }
+    } */
 
 
     .row .side-img .img-a {

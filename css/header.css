@@ -27,6 +27,9 @@
     height: 35px;
     justify-content: space-between;
     align-items: center;
+    padding-right: 0px;
+    padding-left: 0px;
+
 }
 
 
@@ -45,7 +48,9 @@
                                               /* medium-bar */   
 
 .medium-menu{
-   height: 100px;
+   /* height: 100px; */
+   padding-top: 20px;
+   padding-bottom: 20px;
    background-color:rgba(238, 238, 238, 1);
    margin: auto;
    align-items: center;
@@ -56,8 +61,8 @@
 
 
 .mid-bar{
-    height: 100px;
-    /* width: 1280px; */
+  
+
    margin: auto;
    align-items: center;
    display: flex;
@@ -167,8 +172,9 @@
 }
 
 .bottom-bar .bottom-nav {
-    width: 1280px;
-    height: 40px;
+
+    padding-top: 9px;
+    padding-bottom: 8px;
     margin: auto;
    
     display: flex;
