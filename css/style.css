@@ -749,6 +749,11 @@ featured-category
     height: 100%;
 }
 
+.featured-category .right-card img{
+    /* width: 15rem;
+    height: 400px; */
+}
+
 
 .featured-category .left-cart-grey img {
     margin-top: 20px;
@@ -793,14 +798,17 @@ featured-category
 
 
 .feat-cat-background .owl-carousel {
+  
     width: 80%;
     padding-left: 10px;
+    margin-top: 18px;
 }
 
-/* .feat-cat-background .card{
-    width: 15rem;
-    height: 400px;
-} */
+.featured-category .feat-cat-background span h5{
+    position: absolute;
+    border-bottom: 3px solid red;
+    margin-left: 31px;
+}
 
 
 .feat-cat-background .container {
