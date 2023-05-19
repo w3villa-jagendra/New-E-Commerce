@@ -533,11 +533,11 @@ why buy
 /* ************ why-buy .owl-carousel*********** */
 
 .why-buy  .owl-carousel .owl-nav button.owl-prev {
-    left: -60px;
+    left: -5%;
 }
 
 .why-buy .owl-carousel .owl-nav button.owl-next {
-    right: -60px;
+    right: -5%;
 }
 /* ****************
 Featured Product
@@ -607,7 +607,7 @@ Featured Product
 }
 
 
-.featured-product .rotated-lable {
+.featured-product .owl-stage .owl-item .rotated-lable {
     background-color: blue;
     color: white;
   
@@ -675,21 +675,24 @@ Featured Product
     /* font-size: 30px; */
     /* text-align: center; */
     /* padding: 40px 20px; */
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     line-height: 2;
     width: fit-content;
     font-weight: 700;
     /* background-color: #eee; */
 }
 
-
+.featured-product .owl-theme .owl-item{
+    display: flex;
+    justify-content: center;
+}
 .featured-product  .owl-carousel .owl-nav button.owl-prev {
-    left: -60px;
+    left: -3%;
 }
 
 .featured-product .owl-carousel .owl-nav button.owl-next {
-    right: -40px;
+    right: -3%;
 }
 
 
@@ -807,6 +810,7 @@ featured-category
 .featured-category .feat-cat-background span h5{
     position: absolute;
     border-bottom: 3px solid red;
+    padding-bottom: 7px;
     margin-left: 31px;
 }
 
@@ -840,10 +844,10 @@ shop by brand
 
 }
 
-.brand-img {
+/* .brand-img {
 
     flex-wrap: wrap;
-}
+} */
 
 .set-img .inner-img {
     height: 120px;
@@ -851,23 +855,25 @@ shop by brand
     display: flex;
     /* background-color: aqua; */
     border: 2px solid black;
+    margin-right: 43px;
     margin-top: 20px;
     border-radius: 10px;
     flex-wrap: wrap;
 
 }
 
-.col-md-1 {
+/* .col-md-1 {
     flex: 0 0 auto;
     width: 10.333333%;
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .set-img .inner-img img {
     height: 110px;
     width: 110px;
     padding: 14px;
+    padding-right: 20px;
     border-radius: 10px;
     margin: 5px;
 
@@ -884,10 +890,18 @@ shop by brand
     -webkit-backface-visibility: hidden;
 }
 
+.shop-by-brand  .owl-stage .owl-item{
+    width: 130px;
+    margin-right: 20px;
+}
 
 
-
-
+.col-md-1 {
+    flex: 0 0 auto;
+    width: 10.333333%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* ***********************
 Improved Gallery Module
@@ -1133,25 +1147,30 @@ social
 
 }
 
-/* .about .email input {
+/* .about .send-email input {
     border: unset;
     width: 240px;
 
 } */
 
 .about .news .btn .btn-primary {
-  
+  /* color: #1841d5;
+  background-color: #1841d5;     */
 }
 
 
-.about .email {
-  
-    display: flex;  
+.about .send-email {
+  border: 1px solid rgb(100, 100, 100);
+  display: inline; 
+  padding: 7px;
+  padding-bottom: 10px; 
+  padding-right: 1px;
+
 }
 
 .about input{
     width: 45%;
-    border: 2px solid black;
+    border:none;
     font-size: none;
     }
 
@@ -1162,6 +1181,7 @@ social
 
 .about .news{
     border: unset;
+    margin-bottom: 23px;
 }
 
 
