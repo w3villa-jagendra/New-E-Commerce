@@ -121,21 +121,28 @@ Bottom-bar
 responsive header
 ***************** */
 
-.responsive-header {
-    height: 40px;
+.responsive-top-bar {
+    /* height: 80px;  */
+     padding-top: 5px;
+    padding-bottom: 5px    ;
     background-color: rgba(13, 82, 214, 1);
 
 }
 
 .responsive-bar {
     display: flex;
-    height: 40px;
-
+    /* height: 40px; */
+    padding-top: 10px;
+    padding-bottom: 10px    ;
+    background-color: rgba(13, 82, 214, 1);
 
     justify-content: space-between;
     align-items: center;
 }
 
+.responsive-bar ol, ul {
+    padding-left: 0px;
+}
 
 .responsive-bar li {
     list-style: none;
@@ -151,6 +158,32 @@ responsive header
 
 }
 
+
+/* responsive botto15pxm bar */
+
+.bottom-resp-bar{
+    background-color: unset;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bottom-resp-bar .right-item li{
+    list-style:none;
+    float: left;
+}
+
+.bottom-resp-bar .right-item a{
+    padding-left: 10px;
+}
+
+
+
+/* *****************
+responsive-bar ends
+********************* */
 
 /* *************
 owl-carsoule
@@ -330,7 +363,7 @@ home banner
 
 
 .side-img {
-    background-color: #e7e7e7;
+    background-color: #efefefe0;
     margin-left: 1.1rem;
     border-radius: 10px;
     position: relative;
@@ -1389,6 +1422,16 @@ Media Query
     .row .side-img .img-a {
         position: relative;
         margin-left: 0px !important;
+    }
+
+
+    .side-img {
+     margin-top: 1.8rem;   background-color: #efefefe0;
+        margin-left: 1.1rem;
+        border-radius: 10px;
+        position: relative;
+        width: 93%;
+        margin-bottom: 2rem;
     }
 
 
