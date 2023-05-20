@@ -151,12 +151,20 @@ responsive header
 
 
 
-.responsive-bar a {
+.responsive-bar .left-resp-menu a {
     color: white;
     text-decoration: none;
     padding-right: 5px;
 
 }
+.responsive-bar .right-resp-menu a {
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+
+}
+
+
 
 
 /* responsive botto15pxm bar */
