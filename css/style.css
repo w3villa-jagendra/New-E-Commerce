@@ -298,8 +298,142 @@ button.disabled {
 
 
 
+/* ***********
+Login Modal
+*********** */
 
 
+.loginModal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.loginModal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.loginModal-content h2 {
+  margin-top: 0;
+}
+
+.loginModal-content form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+.loginModal-content .button-container {
+  text-align: right;
+}
+
+.loginModal-content button {
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.loginModal-content .submit-btn {
+  background-color: rgba(13,82,214,1);
+  color: white;
+  border: none;
+}
+
+.loginModal-content .cancel-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.loginModal-content button:hover {
+  opacity: 0.8;
+}
+
+
+    /* CSS Styling for the regModal and form */
+    .regModal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+  
+      .regModal-content {
+        background-color: #f2f2f2;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 5px;
+        width: 300px;
+      }
+  
+      .form-container label,
+      .form-container input,
+      .form-container button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      .form-container input[type="email"],
+      .form-container input[type="text"],
+      .form-container input[type="password"] {
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+      }
+  
+      .form-container button {
+        padding: 10px;
+        background-color: rgba(13,82,214,1);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+  
+      .form-container button:hover {
+        background-color: #45a049;
+      }
+  
+      .form-container .cancel-regBtn {
+        background-color: #f44336;
+      }
+  
+      .form-container .cancel-regBtn:hover {
+        background-color: #da1e0d;
+      }
+
+      
 
 /* *************
 home banner
@@ -1363,6 +1497,7 @@ Media Query
         display: none;
     }
 
+   
     /* .set-side-img {
       
         margin-left: -14px;
@@ -1415,6 +1550,8 @@ Media Query
     .feat-cat-background .owl-carousel {
         width: 62%;
     }
+
+
 }
 
 

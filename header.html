@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;900&family=Roboto&family=Ubuntu&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="img/logo.png">
 </head>
@@ -24,27 +25,28 @@
         crossorigin="anonymous"></script>
 
     <!-- main menu-bar contain 3 parts(top-menu, middle-menu, bottom-menu) -->
-    <div class="main-menu">
+    <div class="main-menu" >
 
         <div class="container top-menu">
 
             <div class=" left-menu">
                 <ul class="menu">
-                    <li class="menu1"><i class="fa fa-home" aria-hidden="true"></i> Home</li>
-                    <li class="menu2"><i class="fa fa-id-card" aria-hidden="true"></i> About Us</li>
-                    <li class="menu3"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</li>
-                    <li class="menu4"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</li>
+                    <li class="menu1"><i class="fa fa-home"></i> Home</li>
+                    <li class="menu2"><i class="fa fa-id-card"></i> About Us</li>
+                    <li class="menu3"><i class="fa fa-envelope-o"></i> Contact</li>
+                    <li class="menu4"><i class="fa fa-question-circle"></i> FAQ</li>
                 </ul>
             </div>
 
             <div class="middle-menu">
-                <li class="mid-menu1"> English</li>
-                <li class="mid-menu2"><i class="fa fa-usd" aria-hidden="true"></i> US-Dollar</li>
+                <li class="mid-menu1"> <img class="mid-menu1-flag" src="img/Flag_of_the_United_Kingdom_(1-2).svg.png"
+                        alt=""> English</li>
+                <li class="mid-menu2"><i class="fa fa-usd"></i> US-Dollar</li>
             </div>
 
             <div class="right-menu">
-                <li class="mid-menu1"><i class="fa fa-info-circle" aria-hidden="true"></i> More Menu</li>
-                <li class="mid-menu2"><i class="fa fa-truck" aria-hidden="true"></i> Delivery</li>
+                <li class="mid-menu1"><i class="fa fa-info-circle"></i> More Menu</li>
+                <li class="mid-menu2"><i class="fa fa-truck"></i> Delivery</li>
             </div>
 
         </div>
@@ -69,7 +71,7 @@
                         </div>
 
                         <div class="search-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <i class="fa fa-search"></i>
                         </div>
                     </div>
 
@@ -77,23 +79,23 @@
                     <div class="account-menu">
                         <div class="secondry-menu">
                             <div class="sec-menu">
-                                <a href="#" class="login"><i class="fa fa-user-circle " aria-hidden="true"></i> <span
-                                        class="login">Login</span></a>
+                                <a href="#" class="login" id="openModalBtn"><i class="fa fa-user-circle "></i>
+                                    <span class="login">Login</span></a>
                             </div>
 
 
                             <div class="sec-menu">
-                                <a href="#" class="reg"><i class="fa fa-pencil" aria-hidden="true"></i><span
+                                <a href="#" class="reg"><i class="fa fa-pencil"></i><span
                                         class="reg">Registered</span></a>
                             </div>
 
                             <div class="sec-menu">
-                                <a href="#" class="wish"><i class="fa fa-heart-o" aria-hidden="true"></i><span
+                                <a href="#" class="wish"><i class="fa fa-heart-o"></i><span
                                         class="wish">Wishlist</span></a>
                             </div>
 
                             <div class="sec-menu">
-                                <a href="#" class="compare"><i class="fa fa-exchange" aria-hidden="true"></i><span
+                                <a href="#" class="compare"><i class="fa fa-exchange"></i><span
                                         class="compare">Compare</span></a>
                             </div>
 
@@ -103,7 +105,7 @@
                         </div>
                         <div class="cart-menu">
                             <a href="#"> <span id="cart-total"> 0-item(0) - $0.00</span>
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <i class="fa fa-shopping-cart"></i></a>
                         </div>
                     </div>
 
@@ -121,7 +123,7 @@
             <div class="container">
                 <div class="bottom-nav ssssss">
                     <div class="bottom-left-nav">
-                        <a href="#" class="nav-yellow-bg all "><i class="fa fa-bars" aria-hidden="true"></i> ALL
+                        <a href="#" class="nav-yellow-bg all "><i class="fa fa-bars"></i> ALL
                             Department
                             <span>Sale</span> </a>
                         <a href="#">MULTILEVEL</a>
@@ -131,8 +133,8 @@
 
                     <div class="bottom-right-nav">
 
-                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>18005556787</a>
-                        <a href="#" class="nav-yellow-bg  "><i class="fa fa-file-text-o" aria-hidden="true"></i>BLOG</a>
+                        <a href="#"><i class="fa fa-phone"></i>18005556787</a>
+                        <a href="#" class="nav-yellow-bg  "><i class="fa fa-file-text-o"></i>BLOG</a>
 
                     </div>
                 </div>
@@ -140,11 +142,20 @@
         </div>
 
 
+        <!-- **************
+             Login Modal
+          ************** -->
+   
 
 
+           <!-- **************
+             Registered Modal
+          ************** -->
+   
 
     </div>
-
+    <script src="script/script.js"> </script>
+    <script src="script/header.js"></script>
 </body>
 
 </html>
