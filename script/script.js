@@ -57,16 +57,16 @@ document.getElementById("openModalBtn").addEventListener("click", function() {
    // JavaScript to handle the registration regModal behavior
    var regModal = document.getElementById("registrationModal");
    var regBtn = document.getElementById("registrationBtn");
-   var span = document.getElementsByClassName("close")[0];
+  //  var span = document.getElementsByClassName("close")[0];
    var cancle = document.getElementsByClassName("cancel-regBtn")[0];
 
    regBtn.onclick = function () {
      regModal.style.display = "block";
    }
 
-   span.onclick = function () {
-     regModal.style.display = "none";
-   }
+  //  span.onclick = function () {
+  //    regModal.style.display = "none";
+  //  }
 
    cancle.onclick = function () {
      regModal.style.display = "none";
@@ -87,7 +87,7 @@ document.getElementById("openModalBtn").addEventListener("click", function() {
    let mail = document.getElementById('regEmail').value;
    let  userId = document.getElementById('regUserid').value;
    let  pwd = document.getElementById('regPassword').value;
-    console.log(mail , userId, pwd)
+  
     
     const Details = {
       email : mail,
@@ -96,6 +96,7 @@ document.getElementById("openModalBtn").addEventListener("click", function() {
     }
 
 array.push(Details);
+  console.log(mail , userId, pwd)
 localStorage.setItem("UserDeatils",JSON.stringify(array));
 regModal.style.display = "none";
 
