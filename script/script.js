@@ -3,31 +3,28 @@
 // ******************
 
 
-
-const h = document.getElementsByClassName("owl-item")[0];
 fetch("script/why_buy.json")
-    .then(response => response.json())
-//     .then(data => {
+  .then(response => response.json())
+  .then(data => {
+    const carousel = document.getElementById("y-buy");
+    for (let i = 0; i < data.why_buy.length; i++) {
+      let div = document.createElement("div");
+      div.classList.add("item", "card", "why-card");
+      let img = document.createElement("img");
+      img.classList.add("card-img-top");
+      img.src = data.why_buy[i].image;
+      img.alt = data.why_buy[i].name;
+      let button = document.createElement("button");
+      button.classList.add("btn", "btn-light", "btn-why");
+      button.textContent = data.why_buy[i].name;
+      div.appendChild(img);
+      div.appendChild(button);
+      if (carousel) {
+        carousel.appendChild(div);
+      }
+    }
 
-//         for (let i = 0; i < data.why_buy.length; i++) {
-
-//             //  let hh = document.getElementById("hh");
-//             let a = document.createElement("div")
-//             a.classList.add("item")
-//             a.innerHTML += ` 
-     
-//         <div class="card why-card">
-
-//         <img id="why-buy-img" src="${data.why_buy[i].image}" class="card-img-top" alt="...">
-//         <button type="button" class="btn btn-light btn-why">${data.why_buy[i].name}</button>
-
-//     </div>
-//  `
-//             h.appendChild(a)
-//         }
-//     })
-
-
+  });
 
 
 

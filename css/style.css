@@ -1519,7 +1519,9 @@ Media Query
         left: 30%;
     }
 
-
+.main-menu{
+    display: none;
+}
 
     iframe {
         display: none;
