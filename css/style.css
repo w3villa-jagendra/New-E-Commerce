@@ -750,7 +750,7 @@ Featured Product
 
 .featured-product .card{
     width: 18rem;
-    height: 536px;
+    /* height: 536px; */
     overflow: hidden;
 }
 
@@ -1003,12 +1003,33 @@ featured-category
 
 .feat-cat-background .owl-carousel {
   
+  
+    padding-left: 10px;
+    margin-top: 18px;
+}
+
+
+
+.right-f_cat{
     width: 80%;
+}
+
+
+.feat-cat-background  .right-f_cat .owl-carousel {
+  
+   
     padding-left: 10px;
     margin-top: 18px;
 }
 
 .featured-category .feat-cat-background span h5{
+    position: absolute;
+    border-bottom: 3px solid red;
+    padding-bottom: 7px;
+    margin-left: 31px;
+}
+
+.featured-category .feat-cat-background .right-f_cat span h5{
     position: absolute;
     border-bottom: 3px solid red;
     padding-bottom: 7px;
