@@ -11,7 +11,7 @@ fetch("script/fp_items.json")
       img.alt = data.fp_items[i].fp_name;
      let section = document.createElement("section");
     
-// classList.add("card-header");
+
             section.innerHTML= ` <div class="card-header">
             <a href="#"> ${data.fp_items[i].fp_name}</a>
             <a href="#"> ${data.fp_items[i].fp_model}</a>
@@ -51,3 +51,5 @@ fetch("script/fp_items.json")
     }
 
   });
+
+  
