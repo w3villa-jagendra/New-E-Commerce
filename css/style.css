@@ -453,7 +453,7 @@ home banner
 
 
 .carousel-item img {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .home-banner .carousel-indicators .active {
@@ -1032,6 +1032,7 @@ featured-category
 .feat-cat-background .container {
     margin-top: 50px;
     background-color: #ffffff;
+    width: 1296px;
 }
 
 .featured-category  .right-f_cat .owl-carousel .owl-nav button.owl-prev, .featured-category  .owl-carousel .owl-nav button.owl-next {

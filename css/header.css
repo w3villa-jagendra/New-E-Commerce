@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family:"Roboto", sans-serif ;
+    font-family: "Roboto", sans-serif;
 }
 
 
-.main-menu{
+.main-menu {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -13,7 +13,7 @@
 }
 
 
-.main-menu li{
+.main-menu li {
     display: inline;
     margin: 10px;
     color: grey;
@@ -22,10 +22,10 @@
 }
 
 
-                          /* top-bar */
+/* top-bar */
 
-.top-menu{
-   
+.top-menu {
+
 
     display: flex;
     margin: auto;
@@ -40,134 +40,178 @@
 
 
 
-.top-menu .left-menu{
+.top-menu .left-menu {
 
     padding-top: 16px;
 }
 
-.top-menu .left-menu .menu   ol, ul {
+.top-menu .left-menu .menu ol,
+ul {
     padding-left: 0px;
 }
 
 
-.top-menu .middle-menu .mid-menu1 img{
+.top-menu .middle-menu .mid-menu1 img {
     height: 10px;
     width: 15px;
 }
 
 
-  /* medium-bar */   
+/* medium-bar */
 
-.medium-menu{
-   /* height: 100px; */
-   padding-top: 20px;
-   padding-bottom: 20px;
-   background-color:rgba(238, 238, 238, 1);
-   margin: auto;
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
-
-}
-
-
-.mid-bar{
-  
-
-   margin: auto;
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
+.medium-menu {
+    /* height: 100px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(238, 238, 238, 1);
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 
 }
 
 
+.mid-bar {
 
 
-      /*  search-bar*/
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 
-.search-bar{   
+}
+
+
+
+
+/*  search-bar*/
+
+.search-bar {
 
     display: flex;
     height: 35px;
-    width:29rem;
+    width: 29rem;
     /* flex-grow: 2; */
 
 
 }
 
-.search-bar .all-items{
-    width: 30px;
+.search-bar .all-items {
+
     background-color: rgba(13, 82, 214, 1);
     font-size: 15px;
     color: white;
-    text-align: center;
+    display: flex;
     padding: 5px;
-    align-items: center;
-    border-radius: 3px 0 0 3px ;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-bar .all-items .all-item-dropdown {
+    display: none;
+    background: white;
+    min-width: 100px;
+    height: 300px;
+    position: absolute;
+    top: 105px;
+    z-index: 10;
+    overflow-y: scroll;
+
+}
+
+.search-bar .all-items .all-item-dropdown li {
+
+    display: block;
+    padding: 10px 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-bar .all-items .all-item-dropdown a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.all-item-dropdown li:hover {
+    background-color: aliceblue;
+}
+
+.all-items:hover .all-item-dropdown {
+    display: block;
 }
 
 
-.search-bar .search-icon{
+.search-bar .all-items .all-item-dropdown li {}
+
+.search-bar .all-items .all-item-dropdown ul:hover::after {
+    display: block;
+
+}
+
+
+.search-bar .search-icon {
     background-color: rgba(13, 82, 214, 1);
     font-size: 15px;
     color: white;
     padding: 5px;
     width: 30px;
     padding-top: 5px;
-   text-align: center;
-    border-radius: 0px 3px 3px 0px ;
+    text-align: center;
+    border-radius: 0px 3px 3px 0px;
 }
 
- .search-input input{
-   height: 35px;
-   width:25rem;
-   border: 0px;
-   border-radius: 0px;
-   
+.search-input input {
+    height: 35px;
+    width: 25rem;
+    border: 0px;
+    border-radius: 0px;
+
 }
 
-.account-menu .secondry-menu .fa{
+.account-menu .secondry-menu .fa {
     font-size: 1.5rem;
 }
 
 
 /* account-menu */
 
-.account-menu{
+.account-menu {
     display: flex;
-  
+
 }
 
 .account-menu .secondry-menu {
     text-decoration: none;
     margin-right: 20px;
     display: flex;
-    
+
 }
 
-.account-menu .secondry-menu a{
+.account-menu .secondry-menu a {
     text-decoration: none;
-    color:rgba(105, 105, 115, 1);
+    color: rgba(105, 105, 115, 1);
     margin: 5px;
 }
 
- .login, .reg, .wish, .compare{
+.login,
+.reg,
+.wish,
+.compare {
     display: block;
     text-align: center;
 }
 
 
 
-.account-menu .cart-menu a{
+.account-menu .cart-menu a {
     text-decoration: none;
-    color:rgba(105, 105, 115, 1);
+    color: rgba(105, 105, 115, 1);
     margin: 5px;
-       
+
 }
 
-.account-menu .cart-menu{
- align-self: center;
+.account-menu .cart-menu {
+    align-self: center;
 }
 
 
@@ -175,13 +219,13 @@
 
 
 
-                                             /* Bottom Bar */
+/* Bottom Bar */
 
-.bottom-bar{
+.bottom-bar {
     display: flex;
-    background-color: rgba(13,82,214,1);
-    
-    
+    background-color: rgba(13, 82, 214, 1);
+
+
 }
 
 .bottom-bar .bottom-nav {
@@ -189,15 +233,15 @@
     padding-top: 9px;
     padding-bottom: 8px;
     margin: auto;
-   
+
     display: flex;
     justify-content: space-between;
-  align-items: center;
-  
+    align-items: center;
+
 
 }
 
-.bottom-bar .bottom-nav a{
+.bottom-bar .bottom-nav a {
     text-decoration: none;
     font-family: 'Montserrat';
     font-size: 13px;
@@ -209,8 +253,8 @@
 
 }
 
-.bottom-bar .bottom-nav a span{
-   
+.bottom-bar .bottom-nav a span {
+
     text-transform: none;
     background-color: rgba(233, 102, 49, 1);
     color: white;
@@ -218,24 +262,24 @@
     position: relative;
     top: -22px;
     padding: 2px 5px 2px 5px;
-     align-items: normal;
-     margin-top: 10px ;
+    align-items: normal;
+    margin-top: 10px;
 
 }
 
-.bottom-bar .bottom-nav .nav-yellow-bg{
-      margin-top: 0;
-      margin-bottom: 0;
+.bottom-bar .bottom-nav .nav-yellow-bg {
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: rgba(254, 212, 48, 1);
     padding: 14px;
     padding-bottom: 12px;
-color: black;
+    color: black;
 }
-                    
-.bottom-bar .bottom-nav .nav-blue-bg span{
 
-  color: black;
-  background-color: rgba(254, 212, 48, 1); 
+.bottom-bar .bottom-nav .nav-blue-bg span {
+
+    color: black;
+    background-color: rgba(254, 212, 48, 1);
 }
 
 
@@ -254,13 +298,14 @@ Login Modal
 ********************* */
 
 
-@media screen and (max-width:1200px){
-  
-    .search-bar{
+@media screen and (max-width:1200px) {
+
+    .search-bar {
         width: auto;
     }
-    .search-bar .search-input input{
-        width: 15rem ;
+
+    .search-bar .search-input input {
+        width: 15rem;
     }
-    
+
 }
