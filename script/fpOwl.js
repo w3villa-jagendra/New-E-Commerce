@@ -13,7 +13,7 @@ fetch("script/fp_items.json")
     
 
             section.innerHTML= ` <div class="card-header">
-            <a href="#"> ${data.fp_items[i].fp_name}</a>
+           <a href="product.html?id=${data.fp_items[i].fp_id}"> ${data.fp_items[i].fp_name}</a>
             <a href="#"> ${data.fp_items[i].fp_model}</a>
 
         </div>
