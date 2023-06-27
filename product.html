@@ -11,7 +11,22 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -236,13 +251,13 @@
             <div class="row">
                 <div class="content">
                     <div class="product-info">
-                        <div class="product-left">
+                        <div class="product-left ">
                             <div class="product-items">
 
                                 <img class="small-img" src="img/product-img/apple-gold-80x80.png" alt="">
-                                <img class="small-img" src="img/product-img/apple-rose-80x80.png" alt="">
+
                                 <img class="small-img" src="img/product-img/apple-white-2-70x70.png" alt="">
-                                <img class="small-img" src="img/product-img/apple-white-80x80.png" alt="">
+
                                 <img class="small-img" src="img/product-img/beolab-19-by-bang-olufsen-80x80.jpg" alt="">
                                 <img class="small-img"
                                     src="img/product-img/beoplay-h6-headphones-by-bang-olufsen-70x70.jpg" alt="">
@@ -253,29 +268,44 @@
                                 <img src="img/product-img/beoplay-h6-headphones-by-bang-olufsen-550x550.jpg" alt="">
                             </div>
                         </div>
-                        <div class="product-right">
+                        <div class="product-right ">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">DESCRIPTION</button>
+                                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                                        data-bs-target="#description" type="button" role="tab"
+                                        aria-controls="description" aria-selected="true">DESCRIPTION</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="specification-tab" data-bs-toggle="tab" data-bs-target="#specification" type="button" role="tab" aria-controls="specification" aria-selected="false">SPECIFICATION</button>
+                                    <button class="nav-link" id="specification-tab" data-bs-toggle="tab"
+                                        data-bs-target="#specification" type="button" role="tab"
+                                        aria-controls="specification" aria-selected="false">SPECIFICATION</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">REVIEW</button>
+                                    <button class="nav-link" id="review-tab" data-bs-toggle="tab"
+                                        data-bs-target="#review" type="button" role="tab" aria-controls="review"
+                                        aria-selected="false">REVIEW</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                                    <button class="nav-link" id="custom-tab" data-bs-toggle="tab"
+                                        data-bs-target="#custom" type="button" role="tab" aria-controls="custom"
+                                        aria-selected="false">CUSTOM TABS</button>
                                 </li>
-                              </ul>
-                              <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">                            
-                                <p>Playback- It provides a massive battery backup of upto 15 hours for a superior playback time.
-                                    Drivers- Its 40mm dynamic drivers help pump out immersive HD audio all day long. Charging Time 3 hours
-                                    Earcushions- It has been ergonomically designed and structured as an on-ear headphone to provide the best user experience with its comfortable padded earcushions and lightweight design.</p></div>
-                                <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="profile-tab">
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="description" role="tabpanel"
+                                    aria-labelledby="description-tab">
+                                    <p>Playback- It provides a massive battery backup of upto 15 hours for a superior
+                                        playback time.
+                                        Drivers- Its 40mm dynamic drivers help pump out immersive HD audio all day long.
+                                        Charging Time 3 hours
+                                        Earcushions- It has been ergonomically designed and structured as an on-ear
+                                        headphone to provide the best user experience with its comfortable padded
+                                        earcushions and lightweight design.</p>
+                                </div>
+                                <div class="tab-pane fade" id="specification" role="tabpanel"
+                                    aria-labelledby="profile-tab">
                                     <table class="table table-striped">
-                                    
+
                                         <tbody>
                                             <tr>
                                                 <td>Processor</td>
@@ -291,36 +321,84 @@
                                 <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
                                     <p>There is no review of this product</p>
                                     <h4>Write a Review</h4>
-                                    
+                                    <a href="#"> register </a> or<a href="#"> login </a> for write review
+
                                 </div>
-                                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">hiiii</div>
-                              </div>
+                                <div class="tab-pane fade" id="custom" role="tabpanel" aria-labelledby="custom-tab">
+                                    <p>
+                                        Bluetooth enabled headphones with mic. Get the best brands. Great sound quality.
+                                        Buy now. Huge Selection. Top Brands. Great Offers. No Cost EMI Available. Easy &
+                                        Fast Delivery.
+                                    </p>
+                                </div>
+                            </div>
 
                             <div class="product-description">
 
-                                    <button type="button" class="btn btn-primary btn-sm">See More</button>
+                                <button type="button" class="btn btn-primary btn-sm">See More</button>
                             </div>
 
                             <div class="rating">
-                             <span><i class="fa-regular fa-star"></i></span>
-                             <span><i class="fa-regular fa-star"></i></span>
-                             <span><i class="fa-regular fa-star"></i></span>
-                             <span><i class="fa-regular fa-star"></i></span>
-                             <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
 
-                             <a href="#">Based on 0 review  </a>
-                             -
-                             <a href="#">Write a review  </a>
+                                <a href="#">Based on 0 review </a>
+                                -
+                                <a href="#">Write a review </a>
 
 
-                                                   
+
                             </div>
-                            <hr>  
+                            <hr>
 
                             <div class="product-prices">
-                                     <div class="prices"></div>
-                                     <div class="instock"></div>
-                                     <div class="company"></div>
+                                <div class="prices">
+                                    <div class="old-price">
+                                        <h4> <del> $2999</del></h4>
+                                    </div>
+                                    <div class="new-price">
+                                        <h3>$1000</h3>
+                                    </div>
+                                </div>
+                                <div class="instock">
+                                    <p><i class="fa-solid fa-check"></i> IN STOCK</p>
+                                </div>
+                                <div class="company">
+                                    <img src="img/product-img/erikson-60x60.jpg" alt="">
+                                </div>
+
+
+                            </div>
+
+                            <hr>
+                            <div class="product-option">
+                                <p>Single Choice (with image)</p>
+                                <img src="img/product-img/5-40x40.png" alt="">
+                                <img src="img/product-img/13-40x40.png" alt="">
+                            </div>
+
+                            <hr>
+
+                            <div class="product-order">
+                                <div class="quantity">
+                                    <input type="text" value="1" id="product-quantity">
+                                    <span class="product-count">
+                                        <i class="fa-solid fa-angle-up"></i>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                                </div>
+
+                                <button type="button" class="btn btn-primary btn-lg"> <i
+                                        class="fa-solid fa-cart-shopping"></i> ADD TO CART</button>
+                                <button type="button" class="btn btn-success btn-lg"><i
+                                        class="fa-solid fa-circle-dollar-to-slot"></i> Buy Now </button>
+                                <button type="button" class="btn btn-danger btn-lg"><i
+                                        class="fa-regular fa-circle-question"></i></button>
+
+
                             </div>
                         </div>
                     </div>
@@ -330,10 +408,491 @@
                 </div>
             </div>
         </div>
+
+        <div class="product-cards">
+            <div class="container">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-related-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-related" type="button" role="tab" aria-controls="nav-related"
+                            aria-selected="true">RELATED PRODUCT</button>
+
+                        <button class="nav-link" id="nav-people-tab" data-bs-toggle="tab" data-bs-target="#nav-people"
+                            type="button" role="tab" aria-controls="nav-people" aria-selected="false">PEOPLE ALSO
+                            BOUGHT</button>
+
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-related" role="tabpanel"
+                        aria-labelledby="nav-related-tab" tabindex="0">
+                        <div class="related-cards">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/product-img/bluetooth-gramophone-by-gramovox-190x190.jpg"
+                                    class="card-img-top" alt="...">
+
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Wireless Portable Speaker</a>
+
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+                            </div>
+
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/product-img/beolab-19-by-bang-olufsen-190x190.jpg" class="card-img-top"
+                                    alt="...">
+
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Wireless Portable Speaker</a>
+
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-people" role="tabpanel" aria-labelledby="nav-people-tab"
+                        tabindex="0">
+                        <div class="related-cards">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/product-img/f1-190x190.jpg" class="card-img-top" alt="...">
+
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Beautiful Dresses</a>
+
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+                            </div>
+
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/product-img/beolab-19-by-bang-olufsen-190x190.jpg" class="card-img-top"
+                                    alt="...">
+
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Wireless Portable Speaker</a>
+
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/product-img/f1-190x190.jpg" class="card-img-top" alt="...">
+
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Beautiful Dresses</a>
+
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
     </div>
 
 
 
+
+    <!-- most Viewed -->
+
+    <div class="most-view">
+
+        <div class="container" style="padding-bottom: 23px;">
+            <span class="most-view-head">
+                <span>Most Viewed </span>
+            </span>
+        </div>
+
+
+        <!-- <div class="container  products-container">
+
+
+
+            <div class="most-viewed-product">
+                <div class="pic">
+                    <a href="#"><img src="img/beoplay-h6-headphones-by-bang-olufsen-70x70.jpg" alt=""></a>
+                </div>
+                <div class="pic-content">
+                    <a href="#" class="pic-content-heading">Headphones</a>
+
+                    <div class="price">
+                        <span class="new-price">$999</span>
+                        <span class="old-price">$3999</span>
+                    </div>
+
+                    <div class="more-info">
+
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="most-viewed-product">
+                <div class="pic">
+                    <a href="#"><img src="img/glasses3-70x70.jpg" alt=""></a>
+                </div>
+                <div class="pic-content">
+                    <a href="#" class="pic-content-heading">Oversized Sunglasses </a>
+
+                    <div class="price">
+                        <span class="new-price">$399</span>
+                        <span class="old-price">$689</span>
+                    </div>
+
+                    <div class="more-info">
+
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="most-viewed-product">
+                <div class="pic">
+                    <a href="#"><img src="img/beoplay-h6-headphones-by-bang-olufsen-70x70.jpg" alt=""></a>
+                </div>
+                <div class="pic-content">
+                    <a href="#" class="pic-content-heading">Women's Maris Pump</a>
+
+                    <div class="price">
+                        <span class="new-price">$999</span>
+                        <span class="old-price">$3999</span>
+                        <span class="orignal-price">$999</span>
+                    </div>
+
+                    <div class="more-info">
+
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="most-viewed-product">
+                <div class="pic">
+                    <a href="#"><img src="img/beoplay-h6-headphones-by-bang-olufsen-70x70.jpg" alt=""></a>
+                </div>
+                <div class="pic-content">
+                    <a href="#" class="pic-content-heading">Sports Watch</a>
+
+                    <div class="price">
+                        <span class="new-price">$999</span>
+                        <span class="old-price">$3999</span>
+                        <span class="orignal-price">$649</span>
+                    </div>
+
+                    <div class="more-info">
+
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container products-container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/beoplay-h6-headphones-by-bang-olufsen-70x70.jpg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Headphones</a>
+
+                            <div class="price">
+                                <span class="new-price">$999</span>
+                                <span class="old-price">$3999</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/glasses3-70x70.jpg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Oversized Sunglasses </a>
+
+                            <div class="price">
+                                <span class="new-price">$399</span>
+                                <span class="old-price">$689</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/shoe-70x70.jpg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Women's Maris Pump</a>
+
+                            <div class="price">
+                                <!-- <span class="new-price">$999</span>
+                            <span class="old-price">$3999</span> -->
+                                <span class="orignal-price">$999</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/pexels-photo-280250-70x70.jpeg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Sports Watch</a>
+
+                            <div class="price">
+                                <!-- <span class="new-price">$999</span>
+                            <span class="old-price">$3999</span> -->
+                                <span class="orignal-price">$649</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- *****************
+social
+***************** -->
+
+
+<div class="social">
+    <div class="container">
+        <div class="row  ">
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-facebook "></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+            <!-- <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-facebook "></i></a>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+
+
+    <!-- 
+***************
+    about us
+*************** -->
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h5>About Us</h5>
+                <hr class="divider">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terma & Conditions</a></li>
+                    <li><a href="#">Custom Links</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <h5>Customer Services</h5>
+                <hr class="divider">
+
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Branda</a></li>
+                    <li><a href="#">Unlimited Links</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <h5>My Account</h5>
+                <hr class="divider">
+
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Gift Certificates</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6 news">
+                <h5>Newsletter</h5>
+                <hr class="divider">
+                <p>Stay up to date with news and promotions by signing up for our newsletter</p>
+                <div class="send-email">
+                    <input type="email" placeholder="Your Email">
+                    <button type="button" class="btn  btn-primary btn-sm"><i class="fa-regular fa-envelope"></i>
+                        Send</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+
+    </div>
+</div>
+
+
+    <script>
+        $(document).ready(function ($) {
+            $(".owl-carousel").owlCarousel({
+                loop: false,
+                margin: 20,
+                dots: true,
+                nav: true,
+
+
+                responsive: {
+                    300: {
+                        items: 1
+                    },
+
+                    700: {
+                        items: 2
+                    },
+
+                    900: {
+                        items: 3
+                    },
+                    1399: {
+                        items: 4
+                    }
+                }
+            });
+            var owl = $(".owl-carousel");
+            owl.owlCarousel();
+            $(".next-btn").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+            $(".prev-btn").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+            $(".prev-btn").addClass("disabled");
+            $(owl).on("translated.owl.carousel", function (event) {
+                if ($(".owl-prev").hasClass("disabled")) {
+                    $(".prev-btn").addClass("disabled");
+                } else {
+                    $(".prev-btn").removeClass("disabled");
+                }
+                if ($(".owl-next").hasClass("disabled")) {
+                    $(".next-btn").addClass("disabled");
+                } else {
+                    $(".next-btn").removeClass("disabled");
+                }
+            });
+        });
+
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

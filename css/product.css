@@ -24,7 +24,7 @@
 
 .product-left .product-items .small-img {
     margin: 5px;
-    width: 75px;
+    width: 70px;
     border: 1px solid rgb(139, 139, 139);
     border-radius: 3px;
 }
@@ -34,15 +34,17 @@
   border: 2px solid rgb(139, 139, 139);
   border-radius: 2px;
    margin-top: 5px; 
+   width: 100%;
 }
 
 
 
 .product-right{
     width: 50%;
-    /* background: rgb(82, 82, 255); */
+  
     height: 300px;
     margin-top: 5px;
+    margin-left: 20px;
 }
 
 
@@ -69,4 +71,133 @@ padding: 20px 0px 40px 0px ;
 
 .product-prices{
     display: flex;
+    justify-content: space-between;
+}
+
+.product-prices .new-price h3{
+    color: red;
+    font-weight:bolder;
+}
+.product-prices .old-price h4{
+    color: rgb(103, 103, 103);
+    font-weight:bolder;
+}
+
+
+.product-prices .instock{
+    color: rgb(75, 179, 75);
+    font-size: medium;
+}
+
+.product-option img{
+border-radius: 50px;
+border: 2px solid grey;
+}
+
+
+
+/* product order  */
+
+.product-order{
+    display: flex;
+    justify-content: space-between;
+}
+ .quantity{
+ display: flex;
+    border: 1px solid black;
+    width: 45px;
+  
+}
+
+.product-order #product-quantity{
+    
+    width: 28px;
+    overflow: visible;
+    border: none;
+    padding: 0px 0px 0px 10px;
+
+ 
+}
+
+.product-count{
+    display: grid;
+ 
+}
+
+
+.product-order .btn-primary{
+    
+        font-size: small;
+        width: 50%;
+        border-radius: 4px;
+        background-color: blue;
+    
+    
+}
+
+
+.product-order .btn-success{
+    font-size: small;
+    width: 30%;
+    border-radius: 4px;
+}
+
+.product-order .btn-danger{
+  
+    width: 10%;
+    border-radius: 4px;
+}
+
+
+
+/* product-cards */
+
+.product-cards{
+    margin-top: 100px;
+
+   
+}
+
+.product-cards .card{
+    margin: 20px;
+}
+
+.product-cards .btn-sm {
+    padding: 3px;
+    font-size: small;
+    background-color: rgb(62, 62, 246);
+}
+
+
+.product-cards .card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.related-cards{
+    display: flex;
+}
+
+
+/* media-queries */
+
+
+@media screen and (max-width:1199px) {
+
+    .product-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .product-left{
+        width: 100%;
+    }
+
+    .product-right{
+        width: 100%;
+    }
 }
