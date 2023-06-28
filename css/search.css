@@ -1,0 +1,16 @@
+
+.search-section{
+    display:flex;
+}
+
+
+.left-side{
+    width: 30%;
+    height: 300px;
+    background-color: aqua;
+}
+.right-side{
+    width: 70%;
+    height: 300px;
+    background-color: rgb(247, 239, 164);
+}
