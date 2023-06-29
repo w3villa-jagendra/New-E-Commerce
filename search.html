@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+
+    <link rel="stylesheet" href="css/search.css">
+
+</head>
+
+<body>
+    <div class="main-menu">
+
+        <div class="container top-menu">
+
+            <div class=" left-menu">
+                <ul class="menu">
+                    <li class="menu1"><i class="fa fa-home"></i> Home</li>
+                    <li class="menu2"><i class="fa fa-id-card"></i> About Us</li>
+                    <li class="menu3"><i class="fa fa-envelope-o"></i> Contact</li>
+                    <li class="menu4"><i class="fa fa-question-circle"></i> FAQ</li>
+                </ul>
+            </div>
+
+            <div class="middle-menu">
+                <li class="mid-menu1"> <img class="mid-menu1-flag" src="img/Flag_of_the_United_Kingdom_(1-2).svg.png"
+                        alt=""> English</li>
+                <li class="mid-menu2"><i class="fa fa-usd"></i> US-Dollar</li>
+            </div>
+
+            <div class="right-menu">
+                <li class="mid-menu1"><i class="fa fa-info-circle"></i> More Menu</li>
+                <li class="mid-menu2"><i class="fa fa-truck"></i> Delivery</li>
+            </div>
+
+        </div>
+
+        <div class=" medium-menu">
+
+            <div class="container">
+                <div class="mid-bar">
+
+                    <div class="logo">
+                        <a href="#"><img src="img/journal-logo1x-185x32.png" alt="Journal-Logo"></a>
+                    </div>
+
+                    <div class="search-bar">
+                        <div class="all-items">
+                            <p style="padding-right: 5px;"> All </p>
+                            <i class="fa-solid fa-sort-down" class="dropdown"></i>
+                            <div class="all-item-dropdown">
+                                <ul>
+                                    <li> <a href=""> All</a> </li>
+                                    <li> <a href=""> Fashion</a></li>
+                                    <li> <a href=""> Bags</a></li>
+                                    <li> <a href="">Health & Beauty</a> </li>
+                                    <li> <a href="">Footwear</a> </li>
+                                    <li> <a href=""> Home Decor</a></li>
+                                    <li> <a href=""> Electronics</a></li>
+                                    <li> <a href=""> Appliances</a></li>
+                                    <li> <a href="">Baby & Kids</a></li>
+                                    <li> <a href="">Electronics</a></li>
+                                    <li> <a href="">Appliances</a></li>
+                                    <li> <a href="">Baby & Kids</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="search-input">
+                            <input type="text" placeholder="  Search here...">
+                        </div>
+
+                        <div class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="account-menu">
+                        <div class="secondry-menu">
+                            <div class="sec-menu">
+                                <a href="#" class="login" id="openModalBtn"><i class="fa fa-user-circle "></i>
+                                    <span class="login">Login</span></a>
+                            </div>
+
+
+                            <div class="sec-menu">
+                                <a href="#" class="reg" id="registrationBtn"><i class="fa fa-pencil"></i><span
+                                        class="reg">Registered</span></a>
+                            </div>
+
+                            <div class="sec-menu">
+                                <a href="#" class="wish"><i class="fa fa-heart-o"></i><span
+                                        class="wish">Wishlist</span></a>
+                            </div>
+
+                            <div class="sec-menu">
+                                <a href="#" class="compare"><i class="fa fa-exchange"></i><span
+                                        class="compare">Compare</span></a>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="cart-menu">
+                            <a href="#"> <span id="cart-total"> 0-item(0) - $0.00</span>
+                                <i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Bottom-Bar -->
+
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="bottom-nav ssssss">
+                    <div class="bottom-left-nav">
+                        <a href="#" class="nav-yellow-bg all "><i class="fa fa-bars"></i> ALL
+                            Department
+                            <span>Sale</span> </a>
+                        <a href="#">MULTILEVEL</a>
+                        <a href="#" class="nav-blue-bg ">MEGA MENU <span> New</span></a>
+                        <a href="#">FULLWIDTH</a>
+                    </div>
+
+                    <div class="bottom-right-nav">
+
+                        <a href="#"><i class="fa fa-phone"></i> 18005556787</a>
+                        <a href="#" class="nav-yellow-bg  "><i class="fa fa-file-text-o"></i> BLOG</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- **********************
+    responsive-header start
+********************** -->
+    <div class="responsive-header">
+        <div class="responsive-top-bar">
+
+            <div class="container ">
+                <div class="responsive-bar ">
+                    <div class="left-resp-menu">
+                        <ul>
+                            <li> <a href="#" id="myBtn"> <i class=" fa-solid fa-circle-user"></i><span> Login</span>
+                                </a></li>
+                            <li> <a href="#"> <i class="fa-solid fa-user"></i><span> Registered</span></a></li>
+                        </ul>
+
+
+
+                    </div>
+
+                    <div class="right-resp-menu">
+
+                        <ul>
+                            <li><a href="#"> <span>$ Dollars</span></a></li>
+                            <li><a href="#"> <span>English</span></a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="responsive-bottom-bar">
+            <div class="container">
+                <div class="bottom-resp-bar">
+                    <div class="left-item">
+                        <a href="#"><img src="img/journal-logo1x-185x32.png" alt=""></a>
+                    </div>
+                    <div class="right-item">
+                        <ul>
+                            <li><a href="#"></a><i class="fa-solid fa-bars"></i></li>
+                            <li><a href="#"></a><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li><a href="#"></a><i class="fa-solid fa-cart-shopping"></i></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- **********************
+    responsive-header end 
+********************** -->
+
+
+
+
+    <!-- **********************
+   Search-Section Start 
+********************** -->
+<div class="container">
+    <span><h1> Fashion </h1></span>
+</div>
+
+<div class="search-section">
+    <div class="container search-section">
+        <div class="left-side">
+            
+        </div>
+        <div class="right-side">
+            <p>Fashion is defined in a number of different ways, and its application can be sometimes unclear. Though the term fashion connotes difference, as in "the new fashions of the season", it can also connote sameness, for example in reference to "the fashions of the 1960s", implying a general uniformity. Fashion can signify the latest trends, but may often reference fashions of a previous era, leading to the reappearance of fashions from a different time period. While what is fashionable can be defined by a relatively insular, esteemed and often rich aesthetic elite who make a look exclusive, such as fashion houses and haute couturiers, this 'look' is often designed by pulling references from subcultures and social groups who are not considered elite, and are thus excluded from making the distinction of what is fashion themselves.</p>
+        <div class="search-category">
+            <div class="category-item">
+                <img src="" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+  
+
+
+</div>
+  
+
+    <!-- **********************
+   Search-Section Ends 
+********************** -->
+
+
+    <!-- most Viewed -->
+
+    <div class="most-view">
+
+        <div class="container" style="padding-bottom: 23px;">
+            <span class="most-view-head">
+                <span>Most Viewed </span>
+            </span>
+        </div>
+
+
+       
+
+        <div class="container products-container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/beoplay-h6-headphones-by-bang-olufsen-70x70.jpg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Headphones</a>
+
+                            <div class="price">
+                                <span class="new-price">$999</span>
+                                <span class="old-price">$3999</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/glasses3-70x70.jpg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Oversized Sunglasses </a>
+
+                            <div class="price">
+                                <span class="new-price">$399</span>
+                                <span class="old-price">$689</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/shoe-70x70.jpg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Women's Maris Pump</a>
+
+                            <div class="price">
+                                <!-- <span class="new-price">$999</span>
+                            <span class="old-price">$3999</span> -->
+                                <span class="orignal-price">$999</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="most-viewed-product">
+                        <div class="pic">
+                            <a href="#"><img src="img/pexels-photo-280250-70x70.jpeg" alt=""></a>
+                        </div>
+                        <div class="pic-content">
+                            <a href="#" class="pic-content-heading">Sports Watch</a>
+
+                            <div class="price">
+                                <!-- <span class="new-price">$999</span>
+                            <span class="old-price">$3999</span> -->
+                                <span class="orignal-price">$649</span>
+                            </div>
+
+                            <div class="more-info">
+
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- *****************
+social
+***************** -->
+
+
+<div class="social">
+    <div class="container">
+        <div class="row  ">
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-facebook "></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+            <!-- <div class="so-icon">
+                <a href="#"><i class="fa-brands fa-facebook "></i></a>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+
+
+
+    <!-- 
+***************
+    about us
+*************** -->
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h5>About Us</h5>
+                <hr class="divider">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terma & Conditions</a></li>
+                    <li><a href="#">Custom Links</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <h5>Customer Services</h5>
+                <hr class="divider">
+
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Branda</a></li>
+                    <li><a href="#">Unlimited Links</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <h5>My Account</h5>
+                <hr class="divider">
+
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Gift Certificates</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6 news">
+                <h5>Newsletter</h5>
+                <hr class="divider">
+                <p>Stay up to date with news and promotions by signing up for our newsletter</p>
+                <div class="send-email">
+                    <input type="email" placeholder="Your Email">
+                    <button type="button" class="btn  btn-primary btn-sm"><i class="fa-regular fa-envelope"></i>
+                        Send</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+
+    </div>
+</div>
+
+
+    <script>
+        $(document).ready(function ($) {
+            $(".owl-carousel").owlCarousel({
+                loop: false,
+                margin: 20,
+                dots: true,
+                nav: true,
+
+
+                responsive: {
+                    300: {
+                        items: 1
+                    },
+
+                    700: {
+                        items: 2
+                    },
+
+                    900: {
+                        items: 3
+                    },
+                    1399: {
+                        items: 4
+                    }
+                }
+            });
+            var owl = $(".owl-carousel");
+            owl.owlCarousel();
+            $(".next-btn").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+            $(".prev-btn").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+            $(".prev-btn").addClass("disabled");
+            $(owl).on("translated.owl.carousel", function (event) {
+                if ($(".owl-prev").hasClass("disabled")) {
+                    $(".prev-btn").addClass("disabled");
+                } else {
+                    $(".prev-btn").removeClass("disabled");
+                }
+                if ($(".owl-next").hasClass("disabled")) {
+                    $(".next-btn").addClass("disabled");
+                } else {
+                    $(".next-btn").removeClass("disabled");
+                }
+            });
+        });
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
