@@ -1,0 +1,46 @@
+{
+    "f_cat_items":[
+        {
+            "f_cat_id":"f_cat1",
+            "f_cat_img":"img/acceso-240x280h.jpg",
+            "f_cat_name":"Home",
+            "f_cat_price":"$999"
+
+        },
+        {
+            "f_cat_id":"f_cat2",
+            "f_cat_img":"img/bagcat-240x280h.jpg",
+            "f_cat_name":"Bag",
+            "f_cat_price":"$399"
+
+        },
+        {
+            "f_cat_id":"f_cat3",
+            "f_cat_img":"img/beauty-240x280h.jpg",
+            "f_cat_name":"Beauty",
+            "f_cat_price":"$532"
+
+        },
+        {
+            "f_cat_id":"f_cat4",
+            "f_cat_img":"img/f6-240x280h.jpg",
+            "f_cat_name":"Fashion",
+            "f_cat_price":"$545"
+
+        },
+        {
+            "f_cat_id":"f_cat5",
+            "f_cat_img":"img/bagcat-240x280h.jpg",
+            "f_cat_name":"Bag",
+            "f_cat_price":"$399"
+
+        },
+        {
+            "f_cat_id":"f_cat6",
+            "f_cat_img":"img/acceso-240x280h.jpg",
+            "f_cat_name":"Home",
+            "f_cat_price":"$399"
+
+        }
+    ]
+}
