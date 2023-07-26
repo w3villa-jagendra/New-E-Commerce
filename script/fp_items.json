@@ -1,0 +1,83 @@
+{
+    "fp_items":[
+        {
+            "fp_id": "fp1",
+            "fp_name":"Ericksson",
+            "fp_img":"img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg",
+            "fp_model": "Model519",
+            "fp_type": "Headphone",
+            "fp_newPrice": "$999",
+            "fp_oldPrice": "$1299"
+           
+             
+        },
+        {
+            "fp_id": "fp2",
+            "fp_name":"Nikon",
+            "fp_img":"img/leica-m9-digital-camera-by-leica-250x250.jpg",
+            "fp_model": "Model9",
+            "fp_type": "Camera",
+            "fp_newPrice": "$1569",
+            "fp_oldPrice": "$3299"
+           
+             
+        },
+        {
+            "fp_id": "fp3",
+            "fp_name":"Samsung M1",
+            "fp_img":"img/curved-oled-tv-55ec9300-by-lg-250x250.jpg",
+            "fp_model": "Model519",
+            "fp_type": "Television",
+            "fp_newPrice": "$19999",
+            "fp_oldPrice": "$29999"
+           
+             
+        },
+        {
+            "fp_id": "fp4",
+            "fp_name":"Action Sport",
+            "fp_img":"img/airmax_6-250x250.jpg",
+            "fp_model": "S21",
+            "fp_type": "Shoes",
+            "fp_newPrice": "$199",
+            "fp_oldPrice": "$299"
+           
+             
+        },
+        {
+            "fp_id": "fp5",
+            "fp_name":"Sony T2",
+            "fp_img":"img/ks9500-curved-4k-suhd-tv-by-samsung-250x250.jpg",
+            "fp_model": "C23",
+            "fp_type": "Television",
+            "fp_newPrice": "$1999",
+            "fp_oldPrice": "$3299"
+           
+             
+        },
+        {
+            "fp_id": "fp6",
+            "fp_name":"Ericksson",
+            "fp_img":"img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg",
+            "fp_model": "Model519",
+            "fp_type": "headphone",
+            "fp_newPrice": "$999",
+            "fp_oldPrice": "$3299"
+           
+             
+        },
+        {
+            "fp_id": "fp7",
+            "fp_name":"Nikon",
+            "fp_img":"img/leica-m9-digital-camera-by-leica-250x250.jpg",
+            "fp_model": "Model9",
+            "fp_type": "Camera",
+            "fp_newPrice": "$1569",
+            "fp_oldPrice": "$3299"
+           
+             
+        }
+     
+    
+    ]
+}
