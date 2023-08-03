@@ -12,7 +12,7 @@ fetch("script/f_cat_items.json")
             let section = document.createElement("section");
 
 
-            section.innerHTML = `           <div class="card-body">
+            section.innerHTML = `  <div class="card-body">
             <a href="#">
                 <h6>${data.f_cat_items[i].f_cat_name}</h6>
             </a>

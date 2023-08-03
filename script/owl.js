@@ -7,10 +7,14 @@ fetch("script/why_buy.json")
       div.classList.add("item", "card", "why-card");
       let img = document.createElement("img");
       img.classList.add("card-img-top");
-      img.src = data.why_buy[i].image;
+      img.src =   data.why_buy[i].image;
       img.alt = data.why_buy[i].name;
       let button = document.createElement("button");
       button.classList.add("btn", "btn-light", "btn-why");
+      
+      button.addEventListener('click',()=>{
+        window.location.href = "search.html"
+      })
       button.textContent = data.why_buy[i].name;
       div.appendChild(img);
       div.appendChild(button);

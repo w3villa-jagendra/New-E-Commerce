@@ -24,17 +24,15 @@
 
 .product-left .product-items .small-img {
     margin: 5px;
-    width: 70px;
+    width: 70%;
     border: 1px solid rgb(139, 139, 139);
     border-radius: 3px;
 }
 
-.product-left .product-items-img img{
- 
-  border: 2px solid rgb(139, 139, 139);
-  border-radius: 2px;
-   margin-top: 5px; 
-   width: 100%;
+.product-left .product-items-img{
+    display: flex;
+    border: 1px solid grey;
+    width: 100%;
 }
 
 
@@ -42,7 +40,7 @@
 .product-right{
     width: 50%;
   
-    height: 300px;
+    /* height: 300px; */
     margin-top: 5px;
     margin-left: 20px;
 }
@@ -199,5 +197,13 @@ border: 2px solid grey;
 
     .product-right{
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    
+    .product-left .product-items .small-img {
+     display: none;
     }
 }

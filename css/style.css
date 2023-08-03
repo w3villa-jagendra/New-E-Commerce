@@ -435,6 +435,25 @@ Login Modal
 
       
 
+
+
+      /*************
+       Wishlist Modal
+       ************** */
+
+       .wishlist .wishlist-item {
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+        padding-top: 10px;
+       }
+
+.wishlist .wishlist-item .wish-img{
+        height: 50px;
+        width: 50px;
+       }
+
+
+
 /* *************
 home banner
 ************* */
@@ -668,12 +687,25 @@ why buy
 
 
 }
+ .why-buy .owl-carousel .owl-item img:hover {
+    display: block;
+    width: 100%;
+    transform: scale(1.05);
+    transition: 100ms;
+}
+
 
 .why-card img {
     display: block;
-    width: 100%;
-    height: 333px;
+    width: 100%;  
+}
 
+
+
+.why-card img :hover{
+    
+        transform: scale(1.03);
+     
 }
 
 
@@ -707,14 +739,6 @@ why buy
 
 
 
-.why-buy-cards .comm-card img {
-    display: flex;
-    flex: wrap;
-    height: 300px;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 
 /* ************ why-buy .owl-carousel*********** */
 
@@ -849,6 +873,12 @@ Featured Product
 .featured-product .card-body .fa-heart {
     padding-left: 10px;
 }
+
+/* Add this CSS to your existing CSS file or in a <style> tag in your HTML file */
+.heart-red {
+    color: red;
+  }
+  
 
 .featured-product .card-foot a {
     /* display: flex; */

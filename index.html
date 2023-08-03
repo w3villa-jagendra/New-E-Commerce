@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
@@ -34,22 +37,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
 
-
-
+<script src="https://assistant.blitso.ai/component-v1.js" async></script>
+<script>
+  window.blitsoSettings = { key: 'AefbsSNrxDJOTw82' };
+</script>
 
 </head>
 
 <body>
 
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-        </script>
+
 
 
 
@@ -83,10 +90,10 @@
                 <li class="mid-menu2"><i class="fa fa-usd"></i> US-Dollar</li>
             </div>
 
-            <div class="right-menu">
+            <div     class="right-menu">
                 <li class="mid-menu1"><i class="fa fa-info-circle"></i> More Menu</li>
                 <li class="mid-menu2"><i class="fa fa-truck"></i> Delivery</li>
-            </div>
+            </div>   
 
         </div>
 
@@ -123,15 +130,28 @@
 
 
                         <div class="search-input">
-                            <input type="text" placeholder="  Search here...">
+                            <input type="text" placeholder="  Search here..." id="search-input" >
+                            <div class="search-list" id="search-list">
+                                
+                                <ul id="search-list">
+                            
+                     
+                                </ul>
+                            
+                            </div>
+                           
                         </div>
+
+                 
+                   
 
                         <div class="search-icon">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-search" id="search-icon"></i>
                         </div>
+                    
                     </div>
 
-
+                
                     <div class="account-menu">
                         <div class="secondry-menu">
                             <div class="sec-menu">
@@ -146,7 +166,7 @@
                             </div>
 
                             <div class="sec-menu">
-                                <a href="#" class="wish"><i class="fa fa-heart-o"></i><span
+                                <a href="#" class="wish"><i class="fa fa-heart-o"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i><span
                                         class="wish">Wishlist</span></a>
                             </div>
 
@@ -313,6 +333,46 @@
 
 
 
+
+ <!------------------------
+    Wishlist Modal
+----------------------- -->
+  
+  <!-- Modal -->
+  <div class="modal fade wishlist" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div class="wishlist-item d-flex ">
+          <img src="img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg" alt="" class="wish-img">
+
+           <p class="wish-quantity"> Headphone </p>
+          
+         </div> 
+         <div class="wishlist-item d-flex ">
+          <img src="img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg" alt="" class="wish-img">
+
+           <p class="wish-quantity"> Headphone </p>
+          
+         </div> 
+         <div class="wishlist-item d-flex ">
+          <img src="img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg" alt="" class="wish-img">
+
+           <p class="wish-quantity"> Headphone </p>
+          
+         </div> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <!-- *************
@@ -596,7 +656,7 @@ Delivery
 
 
 
-
+                    
 
                 </div>
 
@@ -630,9 +690,6 @@ Delivery
 
                 </div>
             </div>
-
-
-
         </div>
 
         <div class="comman-grp-btn">
@@ -2041,6 +2098,7 @@ social
     <!-- <script src="script/header.js"></script> -->
     <script src="script/script.js"> </script>
     <script src="script/modal.js"></script>
+    <script src="script/search.js"></script>
 
 
 </body>

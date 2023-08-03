@@ -30,8 +30,6 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
-
-
     <link rel="stylesheet" href="css/search.css">
 
 </head>
@@ -96,11 +94,11 @@
 
 
                         <div class="search-input">
-                            <input type="text" placeholder="  Search here...">
+                            <input type="text" placeholder="  Search here..." id="search-input" >
                         </div>
 
                         <div class="search-icon">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-search" id="search-icon"></i>
                         </div>
                     </div>
 
@@ -245,9 +243,125 @@
 
     <div class="search-section">
         <div class="container search-section">
+
+            <!-------------------------
+                 left-section start
+    --------------------------------------- -->
             <div class="left-side">
 
+                <img class="searched-item-image" src="img/search-img/additional/c1-250x250.jpg" alt="">
+
+                <div class="filters">
+                    <div class="filter-heading justify comman-padding">
+                        <span class="title">Filter</span>
+                        <span><i class="fa-regular fa-circle-xmark"></i> Clear</span>
+
+                    </div>
+                    <hr>
+                    <div class="filter-price justify comman-padding">
+                        <span>PRICE</span>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <hr>
+                    <div class="available">
+                        <div class="filter-availibility justify comman-padding">
+                            <span>AVAILIBILITY</span>
+
+
+                            <i class="fa-solid fa-minus"></i>
+
+                        </div>
+                        <div class="stock">
+                            <input type="checkbox" id="instock" name="vehicle1" value="Bike">
+                            <label for="instock"> In Stock</label><br>
+                            <input type="checkbox" id="outstock" name="vehicle2" value="Car">
+                            <label for="outstock">Out of Stock</label><br>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="subcategories">
+                        <div class="justify comman-padding">
+                            <span>SUBCATEGORIES</span>
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+
+
+                        <div class="sub-options">
+                            <div class="option-item comman-padding option-item-padding">
+                                <img src="img/search-img/additional/assorted-blurred-background-boutique-994523-38x38.jpg"
+                                    alt="">
+                                <span>Dresses</span>
+                            </div>
+                            <div class="option-item comman-padding option-item-padding">
+                                <img src="img/search-img/additional/c-38x38.jpg" alt="">
+                                <span>Pants</span>
+                            </div>
+                            <div class="option-item comman-padding option-item-padding">
+                                <img src="img/search-img/additional/glasses3-38x38.jpg" alt="">
+                                <span>Accessories</span>
+                            </div>
+                            <div class="option-item comman-padding option-item-padding">
+                                <img src="img/search-img/additional/sweater-38x38.jpg" alt="">
+                                <span>Sweaters</span>
+                            </div>
+                            <div class="option-item comman-padding option-item-padding">
+                                <img src="img/search-img/additional/t2-38x38.jpg" alt="">
+                                <span>T-shirts</span>
+                            </div>
+                            <div class="option-item comman-padding option-item-padding">
+                                <img src="img/search-img/additional/assorted-blurred-background-boutique-994523-38x38.jpg"
+                                    alt="">
+                                <span>Dresses</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="filter-brands">
+                        <div class="justify comman-padding">
+                            <span>BRANDS</span>
+                            <span><i class="fa-solid fa-minus"></i></span>
+                        </div>
+
+                        <div class="brands-options">
+                            <img src="img/search-img/brands/awesome-38x38.jpg" alt="">
+                            <img src="img/search-img/brands/chic-38x38.jpg" alt="">
+                            <img src="img/search-img/brands/erikson-38x38.jpg" alt="">
+                            <img src="img/search-img/brands/fashion-38x38.jpg" alt="">
+                            <img src="img/search-img/brands/FC-fashion-38x38.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="filter-color">
+                         <div class="justify comman-padding">
+                            <span>COLOR</span>
+                            <span><i class="fa-solid fa-minus"></i></span>
+                         </div>
+
+                         <div class="color-options">
+                            <img src="img/search-img/colors/5-38x38.png" alt="">
+                            <img src="img/search-img/colors/6-38x38.png" alt="">
+                            <img src="img/search-img/colors/7-38x38.png" alt="">
+                            <img src="img/search-img/colors/9-38x38.png" alt="">
+                            <img src="img/search-img/colors/12-38x38.png" alt="">
+                            <img src="img/search-img/colors/13-38x38.png" alt="">
+                            <img src="img/search-img/colors/14-38x38.png" alt="">
+                         </div>
+                    </div>
+                    <hr>
+
+
+                </div>
             </div>
+
+
+            <!------------------------------
+                 right-section start
+            -------------------------------->
+
             <div class="right-side">
                 <p>Fashion is defined in a number of different ways, and its application can be sometimes unclear.
                     Though the term fashion connotes difference, as in "the new fashions of the season", it can also
@@ -264,19 +378,27 @@
                         <p>Accessori</p>
                     </div>
                     <div class="category-item">
-                        <img src="img/search-img/additional/glasses3-38x38.jpg" alt="">
-                        <p>Accessori</p>
+                        <img src="img/search-img/additional/t2-38x38.jpg" alt="">
+                        <p>T-Shirt</p>
                     </div>
                     <div class="category-item">
-                        <img src="img/search-img/additional/glasses3-38x38.jpg" alt="">
-                        <p>Accessori</p>
+                        <img src="img/search-img/additional/sweater-38x38.jpg" alt="">
+                        <p>Sweaters</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="img/search-img/additional/t2-38x38.jpg" alt="">
+                        <p>T-Shirt</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="img/search-img/additional/sweater-38x38.jpg" alt="">
+                        <p>Sweaters</p>
                     </div>
                 </div>
 
                 <div class="search-cards">
                     <hr>
                     <div class="filter">
-                       
+
                         <div class="compare-product">
                             <a href="#"><i class="fa-solid fa-braille"></i></a>
                             <a href="#"><i class="fa-solid fa-list-ul"></i></a>
@@ -284,7 +406,7 @@
                         </div>
                         <div class="sort-product">
                             <div class="sortBy">
-                                <label for="input-sort">Sort</label>
+                                <label for="input-sort"> Sort </label>
                                 <select id="input-sort" class="form-control" data-filter-sort="" data-filter-order="">
                                     <option value="" selected="selected">Default</option>
                                     <option value="">
@@ -308,42 +430,36 @@
                             </div>
 
                             <div class="show">
-                                <label for="input-sort">Show</label>
+                                <label for="input-sort"> Show </label>
                                 <select id="input-sort" class="form-control" data-filter-sort="" data-filter-order="">
                                     <option value="" selected="selected">Default</option>
-                                    <option value="">
-                                        12</option>
-                                    <option value="">
-                                       25</option>
-                                    <option value="">
-                                       75</option>
-                                    <option value="">
-                                       100</option>
-                               
+                                    <option value=""> 12</option>
+                                    <option value=""> 25</option>
+                                    <option value=""> 75</option>
+                                    <option value="">100</option>
+
                                 </select>
 
                             </div>
 
                         </div>
-                       
+
                     </div>
                     <hr>
 
 
 
-                    <div class="product-cards-item">
-                        
+                    <div class="product-cards-item" id="product-cards-item">
+
+                       
+               <!-- Adding Dynamic Cards With     -->
+
+
                     </div>
                 </div>
-                <hr>
-
-
 
             </div>
         </div>
-
-
-
     </div>
 
 
@@ -579,6 +695,78 @@ social
 
 
     <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const fpName = urlParams.get("fpName");
+            
+
+
+
+fetch("script/fp_items.json")
+  .then((response) => response.json())
+  .then(data => {
+
+    let dynamicCard = document.getElementById("product-cards-item")
+
+    // console.log(data.fp_items[1].fp_name)
+
+
+
+
+
+  for(let i = 0; i < data.fp_items.length; i++){
+    let Id = data.fp_items[i].fp_id;
+    let Name =  data.fp_items[i].fp_name;
+    
+    if(fpName === Name ){
+    let div = document.createElement("div");
+    div.classList.add("product-cards-item");
+
+    div.innerHTML = `
+  <div class="card">
+
+                          <img src="${data.fp_items[i].fp_img}" class="card-img-top"
+                              alt="...">
+                          <div class="card-header">
+                              <a href="#"> ${data.fp_items[i].fp_name}</a>
+                              <a href="#"> Model 291a </a>
+
+                          </div>
+                          <div class="card-body">
+                              <h6>${data.fp_items[i].fp_type}</h6>
+
+                              <p class="price"> ${data.fp_items[i].fp_newPrice} <del style="color:grey"> ${data.fp_items[i].fp_oldPrice}</del></p>
+                              <div class="wishlist">
+                                  <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
+                                  <button type="button" class="btn btn-primary btn-sm">Add to cart</button>
+                                  <i class="fa-regular fa-heart icon"></i>
+                                  <i class="fa-solid fa-arrow-right-arrow-left icon"></i>
+                              </div>
+                          </div>
+                          <div class="card-foot">
+
+                              <a href="#"><i class="fa-regular fa-circle-question"></i> Questions</a>
+                              <a href="#"><i class="fa-solid fa-dollar-sign"></i> Buy Now</a>
+
+                          </div>
+
+
+                      </div>
+  `
+
+    dynamicCard.appendChild(div)
+
+  }
+}
+
+
+  }
+
+  )
+        // console.log(id); 
+        </script>
+
+    <script>
         $(document).ready(function ($) {
             $(".owl-carousel").owlCarousel({
                 loop: false,
@@ -630,9 +818,11 @@ social
     </script>
 
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <script src="script/search.js"></script>
 </body>
 
 </html>

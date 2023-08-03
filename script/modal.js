@@ -10,8 +10,10 @@ document.getElementById("openModalBtn").addEventListener("click", function() {
   // document.getElementsByClassName("close")[0].addEventListener("click", function() {
   //   document.getElementById("myLoginModal").style.display = "none";
   // });
-  
-  document.getElementsByClassName("cancel-btn")[0].addEventListener('click', function(){
+    const lbtn =  document.getElementsByClassName("cancel-btn")[0]
+      lbtn.addEventListener('click', function(event){
+       event.preventDefault();
+    console.log(  window.location.href + "Cancle");
     document.getElementById("myLoginModal").style.display ="none";
   })
   // Close modal when user clicks outside the modal
