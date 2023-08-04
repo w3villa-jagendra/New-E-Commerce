@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<!-- 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
 
 
@@ -41,15 +41,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+<!-- 
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-        </script>
+        </script> -->
 
-<script src="https://assistant.blitso.ai/component-v1.js" async></script>
-<script>
-  window.blitsoSettings = { key: 'AefbsSNrxDJOTw82' };
-</script>
+    <script src="https://assistant.blitso.ai/component-v1.js" async></script>
+    <script>
+        window.blitsoSettings = { key: 'AefbsSNrxDJOTw82' };
+    </script>
 
 </head>
 
@@ -90,10 +90,10 @@
                 <li class="mid-menu2"><i class="fa fa-usd"></i> US-Dollar</li>
             </div>
 
-            <div     class="right-menu">
+            <div class="right-menu">
                 <li class="mid-menu1"><i class="fa fa-info-circle"></i> More Menu</li>
                 <li class="mid-menu2"><i class="fa fa-truck"></i> Delivery</li>
-            </div>   
+            </div>
 
         </div>
 
@@ -130,28 +130,28 @@
 
 
                         <div class="search-input">
-                            <input type="text" placeholder="  Search here..." id="search-input" >
+                            <input type="text" placeholder="  Search here..." id="search-input">
                             <div class="search-list" id="search-list">
-                                
+
                                 <ul id="search-list">
-                            
-                     
+
+
                                 </ul>
-                            
+
                             </div>
-                           
+
                         </div>
 
-                 
-                   
+
+
 
                         <div class="search-icon">
                             <i class="fa fa-search" id="search-icon"></i>
                         </div>
-                    
+
                     </div>
 
-                
+
                     <div class="account-menu">
                         <div class="secondry-menu">
                             <div class="sec-menu">
@@ -166,8 +166,8 @@
                             </div>
 
                             <div class="sec-menu">
-                                <a href="#" class="wish"><i class="fa fa-heart-o"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i><span
-                                        class="wish">Wishlist</span></a>
+                                <a href="#" class="wish"><i class="fa fa-heart-o" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"></i><span class="wish">Wishlist</span></a>
                             </div>
 
                             <div class="sec-menu">
@@ -181,7 +181,8 @@
                         </div>
                         <div class="cart-menu">
                             <a href="#"> <span id="cart-total"> 0-item(0) - $0.00</span>
-                                <i class="fa fa-shopping-cart"></i></a>
+                                <i class="fa fa-shopping-cart" data-bs-toggle="modal"
+                                    data-bs-target="#secondModal"></i></a>
                         </div>
                     </div>
 
@@ -334,47 +335,75 @@
 
 
 
- <!------------------------
+    <!------------------------
     Wishlist Modal
 ----------------------- -->
-  
-  <!-- Modal -->
-  <div class="modal fade wishlist" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-         <div class="wishlist-item d-flex ">
-          <img src="img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg" alt="" class="wish-img">
 
-           <p class="wish-quantity"> Headphone </p>
-          
-         </div> 
-         <div class="wishlist-item d-flex ">
-          <img src="img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg" alt="" class="wish-img">
+    <!-- Modal -->
+    <div class="modal fade wishlist" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Wish List</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
-           <p class="wish-quantity"> Headphone </p>
-          
-         </div> 
-         <div class="wishlist-item d-flex ">
-          <img src="img/beoplay-h6-headphones-by-bang-olufsen-250x250.jpg" alt="" class="wish-img">
+                    <div id="wishlist-item ">
+                        <!-- Here all the dynamic data of the wishlist   -->
+                    </div>
 
-           <p class="wish-quantity"> Headphone </p>
-          
-         </div> 
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
 
 
+
+    <!-- ---------------
+    Add to cart modal
+---------------------- -->
+
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="secondModalLabel">Cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body addtocart" id="addtocart">
+                    <!-- <div class="wishlist-item d-flex ">
+                        <img src="img/airmax_6-250x250.jpg" height="50px" width="50px" alt="" class="wish-img">
+
+                        <p class="wish-quantity"> Shoes</p>
+
+                    </div> -->
+
+                    <!-- add product cards dynamically -->
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- *************
 home-banner
 ************* -->
@@ -656,7 +685,7 @@ Delivery
 
 
 
-                    
+
 
                 </div>
 
@@ -675,6 +704,7 @@ Delivery
     <!-- *******************
             Featured Product
            ******************* -->
+           <script src="script/fpOwl.js"></script>
     <div class="featured-product">
 
         <div class="container">
@@ -948,7 +978,7 @@ Delivery
             </div>
         </div>
 
-        <script src="script/fpOwl.js"></script>
+    
         <!-- *************** owl-carousel featured-product dynamic end ********** -->
 
 
@@ -968,7 +998,7 @@ Delivery
     featured-category
     ****************** -->
 
-
+    
     <div class="featured-category">
 
         <div class="container">
@@ -1167,7 +1197,7 @@ Delivery
                     <div class="carousel-wrap">
                         <div class="owl-carousel owl-theme" id="f_cat_items">
 
-
+                   <!-- dynamic data will be added here  -->
                         </div>
                     </div>
                 </div>
@@ -1175,7 +1205,7 @@ Delivery
 
             </div>
 
-            <script src="script/f_catOwl.js"></script>
+           
             <!-- **************** Dynamic featured categories owl carsoule and left application card End *************** -->
 
         </div>
@@ -2047,6 +2077,7 @@ social
                 margin: 20,
                 dots: true,
                 nav: true,
+               
 
 
                 responsive: {
@@ -2096,6 +2127,7 @@ social
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <!-- <script src="script/header.js"></script> -->
+    <script src="script/f_catOwl.js"></script>
     <script src="script/script.js"> </script>
     <script src="script/modal.js"></script>
     <script src="script/search.js"></script>

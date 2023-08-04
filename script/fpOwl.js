@@ -23,8 +23,8 @@
             <p class="price">${data.fp_items[i].fp_newPrice} <del style="color:grey">${data.fp_items[i].fp_oldPrice}</del></p>
             <div class="wishlist">
                 <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="5">
-                <button type="button" class="btn btn-primary btn-sm">Add to cart</button>
-                <i class="fa-regular fa-heart icon" onclick="toggleHeartColor(this)"></i>
+                <button type="button" class="btn btn-primary btn-sm" onclick=  "AddWish('${data.fp_items[i].fp_id}' , 'addtocart')"  >Add to cart</button>
+                <i class="fa-regular fa-heart icon" id="heart${data.fp_items[i].fp_id}"  onclick= "AddWish('${data.fp_items[i].fp_id}' , 'wishlist')" ></i>
                 <i class="fa-solid fa-arrow-right-arrow-left icon"></i>
             </div>
         </div>
@@ -54,5 +54,76 @@
   
 
 
+
+  function AddWish(id , action)
+  {  
+
+
+    if(action === "addtocart")
+    {
+
+      fetch("script/fp_items.json")
+      .then(response => response.json())
+      .then(data => {
+          
+        for(let i =0;i<data.fp_items.length;i++)
+        {
+          if(id === data.fp_items[i].fp_id)
+          {
+    
+          
+           const item =  document.getElementById("addtocart")
+    
+           item.innerHTML += `
+           <div class="wishlist-item d-flex ">
+           <img src="${data.fp_items[i].fp_img}" alt="" class="wish-img">
+    
+            <p class="wish-quantity"> ${data.fp_items[i].fp_name}</p>
+           
+          </div> 
+            `
+            
+            
+          }
+        }
+    
+      });
+    }
+
+    
+   else if(action === "wishlist")
+   {
+  fetch("script/fp_items.json")
+  .then(response => response.json())
+  .then(data => {
+      
+    for(let i =0;i<data.fp_items.length;i++)
+    {
+      if(id === data.fp_items[i].fp_id)
+      {
+
+      
+       const item =  document.getElementById("wishlist-item ")
+
+       item.innerHTML += `
+       <div class="wishlist-item d-flex ">
+       <img src="${data.fp_items[i].fp_img}" alt="" class="wish-img">
+
+        <p class="wish-quantity"> ${data.fp_items[i].fp_name}</p>
+       
+      </div> 
+        `
+        
+        let heartColor = `heart${data.fp_items[i].fp_id}`;
+        
+       let h=  document.getElementById(heartColor);
+       h.classList.add("heart-red");
+        
+      }
+    }
+
+  });
+  }
+  }
 
   

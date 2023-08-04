@@ -1,95 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Owl Carousel Example</title>
-  <!-- Link to Owl Carousel CSS files -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>owl-carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
   <style>
-    /* Customize the carousel container */
-    .owl-carousel {
+    
+
+
+    .innerCar{
+        width: 50%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+   
+
     }
 
-    /* Customize individual carousel items */
-    .owl-carousel .item {
-      margin: 5px;
-      overflow: hidden;
+
+    .innerCar .card{
+      flex: 1;
+      margin: 20px;
+
     }
 
-    .owl-carousel .item img {
-      width: 100%;
-      height: auto;
+    .innerCar .card img{
+      
+      height: 200px;
+
     }
 
-    /* Custom navigation arrows */
-    .owl-nav {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-    }
 
-    .owl-nav button {
-      background-color: #f9f9f9;
-      border: 2px solid #ddd;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 50%;
-      font-size: 50px; /* Set a reasonable font size for the arrows */
-    }
-
-    .owl-nav button:focus {
-      outline: none;
-    }
   </style>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
-  <div class="owl-carousel">
-    <div class="item"><img src="img/8549539065_78e985be0c_o-250x250.jpg" alt="Image 1"></div>
-    <div class="item"><img src="img/acceso-240x280h.jpg" alt="Image 2"></div>
-    <div class="item"><img src="img/aiony-haust-667702-unsplash-300x225w.jpg" alt="Image 3"></div>
-    <div class="item"><img src="img/8549539065_78e985be0c_o-250x250.jpg" alt="Image 1"></div>
-    <div class="item"><img src="img/acceso-240x280h.jpg" alt="Image 2"></div>
-    <div class="item"><img src="img/aiony-haust-667702-unsplash-300x225w.jpg" alt="Image 3"></div>
-    <div class="item"><img src="img/8549539065_78e985be0c_o-250x250.jpg" alt="Image 1"></div>
-    <div class="item"><img src="img/acceso-240x280h.jpg" alt="Image 2"></div>
-    <div class="item"><img src="img/aiony-haust-667702-unsplash-300x225w.jpg" alt="Image 3"></div>
-    <!-- Add more items as needed -->
-  </div>
+  
+ 
+    <div class="innerCar owl-carousel">
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
 
-  <!-- Link to jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Link to Owl Carousel JavaScript file -->
-  <script src="script/owl.carousel.min.js"></script>
+
+
+
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+
+     
+
+
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="card">
+        <img src="img/acceso-240x280h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+      
+      
+
+
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   <script>
-    $(document).ready(function() {
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: true,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 3
-          },
-          1000: {
-            items: 5
-          }
-        },
-        navText: ['<span aria-label="Previous">‹</span>', '<span aria-label="Next">›</span>']
-      });
+    $(".innerCar").owlCarousel({
+      loop:true,
+      autoplay: true,
+      dots:true,
+      responsive: {
+                    300: {
+                        items: 1
+                    },
+
+                    700: {
+                        items: 2
+                    },
+
+                    900: {
+                        items: 3
+                    },
+                    1399: {
+                        items: 6
+                    }
+                }
+      
+
     });
-  </script>
+  </script>        
 </body>
 </html>

@@ -23,4 +23,4 @@ fetch("script/why_buy.json")
       }
     }
 
-  });
+  })
