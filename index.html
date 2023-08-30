@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New E-Commerce</title>
+  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -18,8 +20,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- 
+
+        <link rel="stylesheet" href="css/header.css">
+       
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/whyus.css">
+
+        <!-- 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
@@ -29,9 +38,7 @@
 
 
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-
+  
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -640,7 +647,7 @@ Delivery
         </div>
     </div> -->
 
-    <script src="script/owl.js"></script>
+    <!-- <script src="script/owl.js"></script>
     <div class="why-buy">
 
         <div class="container">
@@ -691,8 +698,68 @@ Delivery
 
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <section>
+        <div class="why-us">
+          <div class="container">
+            <div class="whyustopcategorieshomedecore">
+              <h1 class="whyus-heading">Why buy form us ?</h1>
+              <hr class="text_desk" />
+              <p class="journa_has_anchartag">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae
+                commodi quas consequuntur <br />
+                distinctio dolorum earum impedit autem ipsam animi quam, accusamus
+                modi ab!<a href="">learn more</a>
+              </p>
+              <div class="topcategoreis_fashion" id="myDIV">
+                <button class="btn-group btn-left-radius active_btn_toogle_categories"
+                  onclick="toggleTopCategories(this);dataadd('topCategory')">
+                  <p>TOP CATEGORIES</p>
+                </button>
+                <button class="btn-group" onclick="toggleTopCategories(this); dataadd('electronic');">
+                  <p>ELECTRONICS</p>
+                </button>
+                <button class="btn-group" onclick="toggleTopCategories(this);dataadd('beauty')">
+                  <p>BEAUTY</p>
+                </button>
+                <button class="btn-group btn-group-right-radius" onclick="toggleTopCategories(this);dataadd('fashion')">
+                  <p>FASHION</p>
+                </button>
+              </div>
+              <div class="whyus_crowsel">
+                <!-- <div class="owl-carousel owl-theme" id="whyus"> -->
+                <!-- <div class="item1 img-topcategories">
+                        <img src="./Assets/images/girlcapim2.jpeg" alt="" />
+                        <p>FASHION</p>
+                      </div>
+                      <div class="item2 img-topcategories">
+                        <img src="./Assets/images/bags.jpg" alt="" />
+                        <p>BAGS</p>
+                      </div>
+                      <div class="item3 img-topcategories">
+                        <img src="./Assets/images/healthbeauty.jpeg" alt="" />
+                        <p>Health & BEAUTY</p>
+                      </div>
+                      <div class="item4 img-topcategories">
+                        <img src="./Assets/images/footwear.jpeg" alt="" />
+                        <p>FOOTWEAR</p>
+                      </div>
+                      <div class="item5 img-topcategories">
+                        <img src="./Assets/images/homedecor.jpeg" alt="" />
+                        <p>HOME DECORE</p>
+                      </div>
+                      <div class="item6 img-topcategories">
+                        <img src="./Assets/images/bags.jpg" alt="" />
+                        <p>FOOTWEAR</p>
+                      </div> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
     <!-- *************
@@ -744,7 +811,7 @@ Delivery
 
 
         <!-- *****************owl-carousel featured-product start *********** -->
-        <!-- <div class="container">
+        <div class="container">
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card">
@@ -961,22 +1028,25 @@ Delivery
                 </div>
 
             </div>
-        </div> -->
+        </div>
         <!-- *****************owl-carousel featured-product end *********** -->
 
         <!-- *************** owl-carousel featured-product dynamic start ********** -->
-        <div class="container">
-            <div class="carousel-wrap">
-                <div class="owl-carousel owl-theme" id="fpro-items">
+        <!-- <div class="container"> -->
+            <!-- <div class="carousel-wrap"> -->
+                <!-- <div class="owl-carousel owl-theme"  id="fpro-items"> -->
 
+                 <div  id="fpro-items">
 
+                 </div>
+                  
                     <!-- here all the content of the cards will be added  -->
+              
+              
 
-
-
-                </div>
-            </div>
-        </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
 
     
         <!-- *************** owl-carousel featured-product dynamic end ********** -->
@@ -2051,24 +2121,6 @@ social
         </div>
     </div>
 
-    <!-- 
-        <div class="owl-carousel owl-theme">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>     <div class="card why-card ">
-                          
-
-                            <img id="why-buy-img" src="img/bagcat-240x280h.jpg" class="card-img-top" alt="...">
-                            <button type="button" class="btn btn-light btn-why">Bag</button>
-
-                        </div>
-    </div> -->
 
     <script>
         $(document).ready(function ($) {
@@ -2078,17 +2130,17 @@ social
                 dots: true,
                 nav: true,
                
-
-
+        
+        
                 responsive: {
                     300: {
                         items: 1
                     },
-
+        
                     700: {
                         items: 2
                     },
-
+        
                     900: {
                         items: 3
                     },
@@ -2119,19 +2171,39 @@ social
                 }
             });
         });
+        
+        </script>
 
-    </script>
+    <!-- 
+        <div class="owl-carousel owl-theme">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>     <div class="card why-card ">
+                          
 
+                            <img id="why-buy-img" src="img/bagcat-240x280h.jpg" class="card-img-top" alt="...">
+                            <button type="button" class="btn btn-light btn-why">Bag</button>
+
+                        </div>
+    </div> -->
+
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <!-- <script src="script/header.js"></script> -->
     <script src="script/f_catOwl.js"></script>
-    <script src="script/script.js"> </script>
+    
     <script src="script/modal.js"></script>
     <script src="script/search.js"></script>
-
+    <script src="script/script.js"> </script>
 
 </body>
 
