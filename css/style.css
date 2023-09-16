@@ -262,7 +262,7 @@ button.disabled {
 
 
 
-.carousel-wrap {
+.carousel-wrap, .featuredCat {
     /* margin: 90px auto; */
     padding: 0 5%;
     /* width: 80%; */

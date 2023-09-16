@@ -121,7 +121,7 @@ async function featuredDataAdd(category) {
 let response = await fetch("script/featured.json");
 let data = await response.json();
 let content = data[category];
-ihtml = `<div class="owl-carousel owl-theme" id="featuredCat">`;
+ihtml = `<div class="owl-carousel owl-theme" id="featuredPro">`;
 for (i in content) {
   ihtml += `
   
@@ -177,7 +177,7 @@ featuredDataAdd((category = "featured"));
 
 
 function featuredCarousel() {
-$("#featuredCat").owlCarousel({
+$("#featuredPro").owlCarousel({
   loop: true,
   margin: 20,
   nav: true,
@@ -204,4 +204,71 @@ $("#featuredCat").owlCarousel({
 
 
 
- 
+//  featured Category
+
+let featCat = document.querySelector(".featuredCategory");
+
+async function featuredCatDataAdd(category) {
+  let response = await fetch("script/f_cat_items.json"); // Change the JSON file path
+  let data = await response.json();
+  let content = data[category];
+  ihtml = `<div class="owl-carousel owl-theme" id="featuredCat">`;
+  for (i in content) {
+    ihtml += `
+    
+    <div class="card item1 right-card">
+   
+     
+                            <img src="${content[i].f_cat_img}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#">
+                                    <h6>${content[i].f_cat_name}</h6> <!-- Use the title from your JSON -->
+                                </a>
+                                <span>${content[i].f_cat_price}</span> <!-- Use the price from your JSON -->
+
+                                <div class="foot">
+
+                                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                                    <i class="fa-regular fa-heart fa-xl"></i>
+                                </div>
+                            </div>
+                        
+
+
+
+    </div>
+
+    `;
+  }
+  ihtml += `</div>`;
+  featCat.innerHTML = ihtml;
+  featuredCatCarousel();
+}
+
+featuredCatDataAdd((category = "f_cat_items"));
+
+function featuredCatCarousel() {
+  $("#featuredCat").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      426: {
+        items: 2,
+      },
+      700: {
+        items: 3,
+      },
+      900: {
+        items: 4,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+}
